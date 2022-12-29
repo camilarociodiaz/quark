@@ -397,6 +397,18 @@ dd {
 }
 
 
+.logos-home{
+display: flex;
+justify-content: flex-end;
+
+}
+
+.logo-home {
+  width: 13rem;
+  padding: 1rem;
+  margin-right: 4rem;
+}
+
 /* ------------------------------------------------------------------- 
  * ## responsive video container
  * ------------------------------------------------------------------- */
@@ -1791,7 +1803,7 @@ input::-moz-focus-inner {
 }
 .home-sidelinks a {
   display: block;
-  padding: 2.1rem 15rem 2.1rem 4rem;
+  padding: 2.1rem 10rem 2.1rem 4rem;
   color: #ffffff;
 }
 .home-sidelinks span {
@@ -2007,6 +2019,14 @@ input::-moz-focus-inner {
 .home-social li:last-child {
   margin-right: 0;
 }
+
+
+
+.img-mockup {
+  margin: 5rem;
+  padding: 2rem;
+}
+
 
 /* animate .home-content__main
  * ------------------------------------------------------------------- */
