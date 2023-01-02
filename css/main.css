@@ -406,15 +406,15 @@ padding: 1rem;
 }
 
 .logo-home {
-  width: 14rem;
+  width: 10rem;
   height: fit-content;
   padding: 1rem;
 
 }
 
 .logo-home-award{
-  width: 13rem;
-  margin-left: 4rem;
+  width: 10rem;
+  margin-left: 13rem;
 }
 
 
@@ -1766,6 +1766,7 @@ img .img-size {
   line-height: 1.1;
   margin-top: 0;
   color: #ffffff;
+  margin-top: 4rem;
 }
 .home-content h1 + p {
   font-family: "metropolis-light", sans-serif;
@@ -2071,6 +2072,12 @@ img .img-size {
 }
 
 
+.img-product {
+
+  margin: 4rem;
+  padding-top: 2rem;
+  margin-right: 4rem;
+}
 
 
 /* animate .home-content__main
