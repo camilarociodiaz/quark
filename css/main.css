@@ -399,15 +399,24 @@ dd {
 
 .logos-home{
 display: flex;
-justify-content: flex-end;
+justify-content: flex-start;
+align-items: center;
+padding: 1rem;
 
 }
 
 .logo-home {
-  width: 13rem;
+  width: 14rem;
+  height: fit-content;
   padding: 1rem;
-  margin-right: 4rem;
+
 }
+
+.logo-home-award{
+  width: 13rem;
+  margin-left: 4rem;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## responsive video container
@@ -1355,10 +1364,13 @@ input::-moz-focus-inner {
   transition: all 0.3s ease-in-out;
 }
 .header-logo img {
-  width: 200px;
-  height: 38px;
+  width: 30rem;
+
 }
 
+img .img-size {
+ width: 300px;
+}
 
 /* ------------------------------------------------------------------- 
  * ## main navigation 
@@ -1421,8 +1433,7 @@ input::-moz-focus-inner {
 .header-nav__list {
   font-family: "metropolis-regular", sans-serif;
   font-size: 1.6rem;
-  margin: 3.6rem 0 3rem 0;
-  padding: 0 0 1.8rem 0;
+  margin: 3.6rem 0 0 0;
   list-style: none;
   counter-reset: ctr;
 }
@@ -1431,9 +1442,7 @@ input::-moz-focus-inner {
   line-height: 4.8rem;
   position: relative;
 }
-.header-nav__list li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-}
+
 .header-nav__list a {
   display: block;
   color: #ffffff;
@@ -1455,6 +1464,32 @@ input::-moz-focus-inner {
 .header-nav__list a:hover::before {
   color: #cc147f;
 }
+
+
+
+/* nav detail */
+.header-nav__detail{
+
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.6rem;
+  list-style: none;
+  margin-left: 5rem;
+}
+
+
+.header-nav__detail li {
+  position: relative;
+  padding: 0.5rem;
+}
+
+.nav-detail a {
+  display: block;
+  color: #ffffff;
+  position: relative;
+
+}
+
+
 
 .header-nav__social {
   list-style: none;
@@ -1837,7 +1872,7 @@ input::-moz-focus-inner {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
  
 }
 .home-button li {
@@ -2021,11 +2056,21 @@ input::-moz-focus-inner {
 }
 
 
+.container-mockup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .img-mockup {
-  margin: 5rem;
-  padding: 2rem;
+  width: 70vh;
+  margin: 2rem;
+  margin-bottom: 5rem;
 }
+
+
 
 
 /* animate .home-content__main
@@ -2107,10 +2152,10 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1600px) {
   .home-content h1 {
-    font-size: 8.8rem;
+    font-size: 6.8rem;
   }
   .home-content h1 + p {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
   }
 
   .home-content__main {
@@ -2131,7 +2176,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1500px) {
   .home-content h1 {
-    font-size: 8.6rem;
+    font-size: 5.6rem;
   }
 
   .home-content__main {
@@ -2140,7 +2185,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
-    font-size: 7.8rem;
+    font-size: 5.8rem;
   }
   .home-content h1 + p {
     font-size: 3rem;
@@ -2159,7 +2204,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1200px) {
   .home-content h1 {
-    font-size: 7.2rem;
+    font-size: 5.2rem;
   }
   .home-content h1 + p {
     font-size: 2.4rem;
@@ -2391,7 +2436,7 @@ html.no-csstransitions .home-content__main {
   top: 0;
 }
 .process__text {
-  margin-left: 7.5rem;
+  margin-left: 17.5rem;
   padding-right: 30px;
 }
 
@@ -2423,7 +2468,7 @@ html.no-csstransitions .home-content__main {
     left: 15px;
   }
   .process__text {
-    margin-left: 6.8rem;
+    margin-left: 4.8rem;
     padding-right: 0;
   }
 }
@@ -2524,7 +2569,7 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * services
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 2000px) {
   .s-services {
     padding-top: 15rem;
     padding-bottom: 15rem;
