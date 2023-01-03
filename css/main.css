@@ -2279,6 +2279,36 @@ text-align: justify;
   padding: 0 20px;
 }
 
+
+
+.quark_dot {
+  position: relative;
+  min-height: 4.6rem;
+}
+
+.quark_dot::before {
+  content: attr(data-item);
+    display: block;
+    font-family: "metropolis-semibold", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(30, 136, 229);
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ffffff;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+.quark_bold {
+  font-size: 1.8rem;
+}
+
+
 /* animate .home-content__main
  * ------------------------------------------------------------------- */
 html.cl-preload .home-content__main {
