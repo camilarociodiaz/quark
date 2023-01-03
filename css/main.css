@@ -2055,22 +2055,18 @@ img .img-size {
   padding: 0;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
   margin: 1rem;
 }
 
-.home-button li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
+
 
 
 .home-button a {
   display: block;
   padding: 2rem;
-
   color: #ffffff;
 }
 
@@ -2088,14 +2084,11 @@ img .img-size {
 
 
 
-.home-button li:hover {
+.quark_home-button:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgb(186, 104, 200);
   ;
 }
-
-
 
 
 /* ------------------------------------------------------------------- 
@@ -2308,6 +2301,10 @@ text-align: justify;
   font-size: 1.8rem;
 }
 
+.quark_center {
+  text-align: center;
+  margin-top: 1rem;
+}
 
 /* animate .home-content__main
  * ------------------------------------------------------------------- */
@@ -3519,14 +3516,13 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-main {
-  margin-top: 14.4rem;
   margin-bottom: 4.8rem;
 }
 
 .contact-email {
   display: inline-block;
   font-family: "metropolis-light", sans-serif;
-  font-size: 5.4rem;
+  font-size: 2.4rem;
   line-height: 1.222;
   color: #ffffff;
   padding-top: 3.6rem;
@@ -3546,14 +3542,14 @@ html.no-csstransitions .home-content__main {
 
 .contact-number {
   font-family: "metropolis-light", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.7;
   display: block;
 }
 
 .contact-address {
   font-family: "metropolis-regular", sans-serif;
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   line-height: 1.607;
   margin-top: 2.4rem;
 }
