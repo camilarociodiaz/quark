@@ -1892,7 +1892,7 @@ img .img-size {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.1;
   background: linear-gradient(to right, black 0%, black 20%, transparent 100%);
 }
 
@@ -1986,7 +1986,7 @@ img .img-size {
   display: block;
   padding: 0;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(186, 104, 200, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -2026,7 +2026,7 @@ img .img-size {
 }
 
 .home-sidelinks li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(186, 104, 200, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -2054,7 +2054,7 @@ img .img-size {
 .home-button li {
   padding: 0;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(186, 104, 200, 0.1);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
@@ -2085,12 +2085,22 @@ img .img-size {
 
 
 .quark_home-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(186, 104, 200, 0.3);
   border-bottom: 1px solid rgb(186, 104, 200);
   ;
 }
 
 
+.quark_img-mockup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.quark_img-mockup img {
+width: 80%;
+height: auto;
+}
 /* ------------------------------------------------------------------- 
  * ## home scroll
  * ------------------------------------------------------------------- */
