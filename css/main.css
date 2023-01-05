@@ -1892,6 +1892,10 @@ img .img-size {
   display: table;
 }
 
+.quark_iframe{
+padding: 4rem;
+}
+
 .s-home .shadow-overlay {
   position: absolute;
   top: 0;
