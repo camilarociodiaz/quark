@@ -1884,6 +1884,14 @@ img .img-size {
   display: table;
 }
 
+.s-home_demo {
+  width: 100%;
+  height:5%;
+  background-color: transparent;
+  position: relative;
+  display: table;
+}
+
 .s-home .shadow-overlay {
   position: absolute;
   top: 0;
@@ -4026,3 +4034,10 @@ html.no-csstransitions .home-content__main {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+.banner img {
+width: 100%;
+height: 200px;
+}
