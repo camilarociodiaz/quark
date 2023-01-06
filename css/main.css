@@ -2103,9 +2103,6 @@ img .img-size {
   height: auto;
 }
 
-.quark_img-mockup img {
-  max-height: 80vh;
-}
 
 
 .quark_banner {
@@ -2299,7 +2296,6 @@ img .img-size {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
   margin-right: 12rem;
 }
 
@@ -4142,10 +4138,12 @@ html.no-csstransitions .home-content__main {
   margin-top: 1rem;
 }
 
-
+/*
 .quark_resources {
   background-color: #ffffff;
   padding: 2rem;
   border-color: #151515;
   border: 10px;
 }
+
+*/
