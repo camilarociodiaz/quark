@@ -4099,20 +4099,22 @@ html.no-csstransitions .home-content__main {
 
 .quark_news-container {
   padding-bottom: 3rem;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
 }
 
 
 .read-more-state {
   display: none;
   visibility: hidden;
+  margin: 0rem;
+  height: 1px;
 }
 
 .read-more-target {
   opacity: 0;
   max-height: 0;
   font-size: 0;
-
+  /*transition: .25s ease;*/
 }
 
 .read-more-state:checked~.read-more-wrap .read-more-target {
@@ -4138,4 +4140,12 @@ html.no-csstransitions .home-content__main {
   border: 1px solid #ddd;
   border-radius: .25em;
   margin-top: 1rem;
+}
+
+
+.quark_resources {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-color: #151515;
+  border: 10px;
 }
