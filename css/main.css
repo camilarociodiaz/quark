@@ -1902,7 +1902,7 @@ padding: 4rem;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
+  opacity: 0.17;
   background: linear-gradient(to right, black 0%, black 20%, transparent 100%);
 }
 
@@ -2024,7 +2024,7 @@ padding: 4rem;
 .home-sidelinks a {
   display: block;
   padding: 2.1rem 5rem 2.1rem 2rem;
-  color: rgba(188, 188, 188, 0.462);
+  color: rgba(242, 242, 242, 0.75);
   margin-bottom: 1rem;
 }
 
