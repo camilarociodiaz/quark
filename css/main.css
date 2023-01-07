@@ -477,6 +477,7 @@ dd {
   position: absolute;
   left: 0%;
   right: 0;
+  padding-left: 15rem;
 }
 
 .logo-home {
@@ -488,7 +489,6 @@ dd {
 
 .logo-home-award {
   width: 17rem;
-  margin-left: 13rem;
 }
 
 
@@ -2103,6 +2103,10 @@ img .img-size {
   height: auto;
 }
 
+.quark_img-mockup img {
+  max-height: 70rem;
+}
+
 
 
 .quark_banner {
@@ -2273,9 +2277,8 @@ img .img-size {
 
 
 .quark_row {
-  width: 70%;
+  width: 50%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .process__text {
