@@ -32,7 +32,7 @@
 
 </head>
 
-<body id="top">
+<body id="top" onload="script();">
 
     <!-- header
     ================================================== -->
@@ -107,9 +107,9 @@
         </div>
 
         <div class="row">
-            <div class="col-full">
+            <div class="col-full" id="dynamicNew">
 
-                <p class="quark_p">
+                <!-- <p class="quark_p">
                     <b>San Jose, CA, June 7, 2022</b> – Quark.ai, the market leading Autonomous Support Platform for B2B
                     e-Commerce and Customer/Field Support, today announced that it has earned the prestigious ISO/IEC
                     27001:2013 Certificate. The certification demonstrates that Quark.ai meets the most stringent
@@ -164,7 +164,7 @@
                     Robert Ferri <br>
                     Robert.ferri@robertferri.com <br>
                     (415) 575-1589
-                </p>
+                </p> -->
             </div>
         </div> <!-- end about-desc -->
 
@@ -180,31 +180,48 @@
 
 
         <script>
-            function Click() {
+            //THIS SCRIPT WILL RUN AFTER BODY IS LOADED
+            const news = [
+                {
+                    id: 1,
+                    htmlContent: `<div class="quark_news-container" id="post-1">
+                        <input type="checkbox" class="read-more-state" />
+                        <h4> <b> Quark.ai CEO, in Digital Commerce 360 – Part 3: discusses strategies to boost self-service
+                                for post-sales support</b></h4>
+                        <h6>Nov 17, 2022</h6>
 
-              
-                    document.getElementById("title").innerHTML =
-                        "titulo noticia 01";
-                    document.getElementById("date").innerHTML =
-                        "fecha noticia 01";
-                    document.getElementById("text").innerHTML =
-                        "texto noticia 01";
-                
-            }
+                        <p class="quark_p overflow-ellipsis box read-more-wrap">
+                            In this third of a 4-part series on using AI and machine learning in B2B ecommerce, Prosenjit
+                            Sen, founder and CEO of AI technology provider Quark.ai, covers how AI and machine learning
+                            technology can upgrade post-sale as well as pre-sale customer support to boost
+                            <a href="/news-read-more?id=1">Read more</a>
+                        </p>
 
-            function Click2() {
 
-               
-                    document.getElementById("title").innerHTML =
-                        "titulo noticia 02";
-                    document.getElementById("date").innerHTML =
-                        "fecha noticia 02";
-                    document.getElementById("text").innerHTML =
-                        "texto noticia 02";
-                
-            }
+                    </div>`
+                }
+            ]
 
-            </script>
+            //RETRIEVING ALL PARAMETERS FROM URL
+            var options = window.location.search.slice(1)
+                .split('&')
+                .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
+                    b = b.split('=');
+                    a[b[0]] = decodeURIComponent(b[1]);
+                    return a;
+                }, {});
+
+            //FILTERING THE NEWS ARRAY 
+            var selectedNewArray = news.filter(function (el) {
+                return el.id == options.id;
+            });
+
+            //MODIFYING INNER HTML FOR THE DYNAMIC NEWS CONTAINER
+            document.getElementById("dynamicNew").innerHTML = selectedNewArray[0].htmlContent;
+
+            //MODIFICAR TITULO Y FECHA
+
+        </script>
 
     </section>
 
