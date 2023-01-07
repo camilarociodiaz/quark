@@ -110,8 +110,8 @@
 
         <div class="row quark_news">
             <div class="col-full ">
-                <div class="quark_news-container">
-                    <input type="checkbox" class="read-more-state" id="post-1" />
+                <div class="quark_news-container" id="post-1">
+                    <input type="checkbox" class="read-more-state" />
                     <h4> <b> Quark.ai CEO, in Digital Commerce 360 – Part 3: discusses strategies to boost self-service
                             for post-sales support</b></h4>
                     <h6>Nov 17, 2022</h6>
@@ -119,10 +119,11 @@
                     <p class="quark_p overflow-ellipsis box read-more-wrap">
                         In this third of a 4-part series on using AI and machine learning in B2B ecommerce, Prosenjit
                         Sen, founder and CEO of AI technology provider Quark.ai, covers how AI and machine learning
-                        technology can upgrade post-sale as well as pre-sale customer support to boost <span class="read-more-target"> sales win customer loyalty.
-                        </span>
+                        technology can upgrade post-sale as well as pre-sale customer support to boost
+                        <a href="/news-read-more.html">Read more</a>
                     </p>
-                    <label for="post-1" class="read-more-trigger"></label>
+
+
                 </div>
 
 
@@ -136,7 +137,9 @@
                     <p class="quark_p overflow-ellipsis box read-more-wrap">
                         San Jose, CA, October 31, 2022 – Quark.ai, the Autonomous Support Platform for Technical/Field
                         Support and B2B e-Commerce, today introduced the Quark.ai Workflow Automator, a powerful module
-                        designed to power Field Support engineers with a self-service tool for<span class="read-more-target"> rapidly resolving complex support-related workflow issues of industrial enterprises.
+                        designed to power Field Support engineers with a self-service tool for<span
+                            class="read-more-target"> rapidly resolving complex support-related workflow issues of
+                            industrial enterprises.
                             <br>
                             The Quark.ai Workflow Automator module enables unparalleled productivity improvement. A
                             robust combination of Deep Learning, NLP and Computer Vision, it allows Field Support
@@ -166,12 +169,18 @@
 
                             About Quark.ai
 
-Quark.ai is the technology leader in Autonomous Customer Support and Autonomous B2B eCommerce Support. Quark.ai’s multi-channel platform combines Deep Learning, Natural Language Processing and Computer Vision to interpret complex customer cases and automatically provide resolutions at scale with unsurpassed accuracy and speed. The result is unrivaled efficiency and scalability in Customer Support, with lower escalations, higher Customer Satisfaction and significant cost savings. More information may be found at https://quark.ai.
+                            Quark.ai is the technology leader in Autonomous Customer Support and Autonomous B2B
+                            eCommerce Support. Quark.ai’s multi-channel platform combines Deep Learning, Natural
+                            Language Processing and Computer Vision to interpret complex customer cases and
+                            automatically provide resolutions at scale with unsurpassed accuracy and speed. The result
+                            is unrivaled efficiency and scalability in Customer Support, with lower escalations, higher
+                            Customer Satisfaction and significant cost savings. More information may be found at
+                            https://quark.ai.
 
-Contact:
-Robert Ferri
-Robert.ferri@robertferri.com
-(415) 575-1589
+                            Contact:
+                            Robert Ferri
+                            Robert.ferri@robertferri.com
+                            (415) 575-1589
 
                         </span>
                     </p>
@@ -188,8 +197,9 @@ Robert.ferri@robertferri.com
                         In this second of 4-part series about becoming more competitive with AI and machine learning
                         technology, Prosenjit Sen, CEO of Quark.ai, discusses how B2B companies can differentiate with
                         cutting-edge site search for customers’ product discovery. </p>
-                        
-                    <a href="https://www.digitalcommerce360.com/2022/10/13/become-amazon-in-your-space-with-ai-ml-skyrocket-product-discovery-on-your-b2b-site/">External
+
+                    <a
+                        href="https://www.digitalcommerce360.com/2022/10/13/become-amazon-in-your-space-with-ai-ml-skyrocket-product-discovery-on-your-b2b-site/">External
                         link</a>
 
                 </div>
@@ -226,6 +236,99 @@ Robert.ferri@robertferri.com
 
 
         </div>
+
+    </section>
+
+    <section class="s-services light-gray">
+
+
+        <div>
+            <h4>New 01</h4>
+            <h6> nov 17,22</h6>
+            <p class="quark_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nulla modi! Veniam, et
+                doloremque voluptas tempora neque tempore dolorum velit. </p>
+            <a type="Submit" onclick="Click()" id="new-01"> Read more</a>
+        </div>
+
+        <div>
+            <h4>New 02</h4>
+            <h6> jan 17,20</h6>
+            <p class="quark_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nulla modi! Veniam, et
+                doloremque voluptas tempora neque tempore dolorum velit. </p>
+
+            <a type="Submit" onclick="Click2()" id="new-02"> Read more</a>
+        </div>
+
+
+
+        <div>
+            <h4 id="title"></h4>
+            <h6 id="date"></h6>
+            <p class="quark_p" id="text"> </p>
+        </div>
+
+
+        <!--
+        <a type="Submit" onclick="Click()" id="new-01"> read more 01 </a>
+        <p id="demo"></p>
+        <br>
+        <a type="Submit" onclick="Click()" id="new-02"> read more 02 </a>
+
+        <br>
+        <a type="Submit" onclick="Click()" id="new-03"> read more 03 </a>
+
+          -->
+
+        <script>
+            function Click() {
+
+              
+                    document.getElementById("title").innerHTML =
+                        "titulo noticia 01";
+                    document.getElementById("date").innerHTML =
+                        "fecha noticia 01";
+                    document.getElementById("text").innerHTML =
+                        "texto noticia 01";
+                
+            }
+
+            function Click2() {
+
+               
+                    document.getElementById("title").innerHTML =
+                        "titulo noticia 02";
+                    document.getElementById("date").innerHTML =
+                        "fecha noticia 02";
+                    document.getElementById("text").innerHTML =
+                        "texto noticia 02";
+                
+            }
+
+
+            /*
+            function Click() {
+
+if (id = "new-01") {
+    document.getElementById("demo").innerHTML =
+        "new-01";
+} if (id = "new-02") {
+    document.getElementById("demo").innerHTML =
+        "new-02";
+} if (id = "new-02") {
+    document.getElementById("demo").innerHTML =
+        "new-03";
+    document.getElementById("demo").style.color = "#009900";
+} else {
+    document.getElementById("demo").innerHTML =
+        "else";
+}
+
+}
+*/
+        </script>
+
+
+
 
     </section>
 
