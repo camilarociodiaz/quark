@@ -477,6 +477,7 @@ dd {
   position: absolute;
   left: 0%;
   right: 0;
+  top: 80%;
   padding-left: 15rem;
 }
 
@@ -4165,12 +4166,15 @@ border-color: #4a95cc;
   visibility: hidden;
   margin: 0rem;
 }
-/*
-.quark_resources {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-color: #151515;
-  border: 10px;
-}
 
-*/
+
+
+/*# BLOG  */
+
+
+.quark_blog-container {
+  background-color: white;
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+}
