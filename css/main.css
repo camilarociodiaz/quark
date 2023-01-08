@@ -2637,6 +2637,18 @@ html.no-csstransitions .home-content__main {
     align-content: center;
     flex-wrap: wrap;
     width: 80vh;
+    
+  }
+
+  .img-container-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80vh;
+    
   }
 
   .home-button {
@@ -4144,25 +4156,26 @@ html.no-csstransitions .home-content__main {
 
 #dynamicImg {
   display: flex;
-justify-content: center;
-margin-top: 1.5rem;
-margin-bottom: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.quark_news-quote{
+
+.quark_news-quote {
   list-style: none;
-  border-left: 13px ;
-border-color: rgb(30, 136, 229);
+  border-left: 13px;
+  border-color: rgb(30, 136, 229);
 }
 
 
-.quark_news-quote li{
-margin: 5rem 0rem 0rem 2rem;
-padding-left: 2rem;
-border-left-style: solid;
-border-color: #4a95cc;
+.quark_news-quote li {
+  margin: 5rem 0rem 0rem 2rem;
+  padding-left: 2rem;
+  border-left-style: solid;
+  border-color: #4a95cc;
 }
 
-.quark_img-new-hidden{
+.quark_img-new-hidden {
   visibility: hidden;
   margin: 0rem;
 }
@@ -4172,9 +4185,56 @@ border-color: #4a95cc;
 /*# BLOG  */
 
 
+.quark_blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .quark_blog-container {
   background-color: white;
   padding: 2rem;
-  width: 100%;
-  height: auto;
+  margin: 2rem;
+  width: 50vh;
+}
+
+
+.resource_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+.quark_resources{
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem;
+  width: 100vh;
+}
+
+
+
+.investors-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.investors-img{
+height: 6rem;
+margin: 2rem;
+}
+
+
+.partners-img{
+width: 20vh;
+margin: 1rem;
+margin-top: 6rem;
 }
