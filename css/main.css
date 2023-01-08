@@ -4214,7 +4214,7 @@ html.no-csstransitions .home-content__main {
   background-color: white;
   padding: 2rem;
   margin: 2rem;
-  width: 100vh;
+  width: vh;
 }
 
 
