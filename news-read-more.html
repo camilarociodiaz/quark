@@ -52,12 +52,11 @@
                 <h3>Quark.ai</h3>
 
                 <ol class="header-nav__list">
-                    <li class="current"><a class="" href="/index.html" title="home">Home</a></li>
-                    <li><a href="/index.html#introduction" title="Introduction">Introduction</a></li>
-                    <li><a href="/index.html#product" title="Product">Product</a></li>
-                    <li><a href="/index.html#technology" title="Technology">Technology</a></li>
-                    <li><a href="https://quark.ai/news/" target="_blank" rel="noopener noreferrer" title="News">News</a>
-                    </li>
+                    <li class="current"><a class="" href="#home" title="home">Home</a></li>
+                    <li><a href="#introduction" title="Introduction">Introduction</a></li>
+                    <li><a href="#product" title="Product">Product</a></li>
+                    <li><a href="#technology" title="Technology">Technology</a></li>
+                    <li><a href="/news.html" title="News">News</a></li>
                     <li><a href="/resources.html" target="_blank" rel="noopener noreferrer" title="Video Library">Video
                             Library</a></li>
                     <li><a href="#" title="Partners">Partners</a></li>
@@ -88,11 +87,7 @@
     ================================================== -->
     <section class="banner" data-parallax="scroll" data-image-src="/images/img-news.jpg" data-position-y=top>
         <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-        </div> <!-- end home-content -->
-
+        <div class="home-content"> </div>
     </section> <!-- end s-home -->
 
     <section id='introduction' class="s-about">
@@ -100,82 +95,17 @@
         <div data-aos="">
             <div class="row section-header">
                 <div class="col-full">
-                    <h3 class="subhead">Jun 6, 2022 | Press Release, News Tab</h3>
-                    <h1 class="display-1">Quark.ai Earns Prestigious ISO/IEC 27001:2013 Certification</h1>
+                    <h3 id="dynamicDate"></h3>
+                    <div id="dynamicTitle"></div>
                 </div>
             </div> <!-- end section-header -->
         </div>
 
         <div class="row">
-            <div class="col-full" id="dynamicNew">
-
-                <!-- <p class="quark_p">
-                    <b>San Jose, CA, June 7, 2022</b> – Quark.ai, the market leading Autonomous Support Platform for B2B
-                    e-Commerce and Customer/Field Support, today announced that it has earned the prestigious ISO/IEC
-                    27001:2013 Certificate. The certification demonstrates that Quark.ai meets the most stringent
-                    international standards of information security management and security compliance.
-                </p> <br>
-
-
-                <p class="quark_p">
-                    The ISO (International Organization for Standardization) and IEC (International Electrotechnical
-                    Commission) 27001 certificate is the most widely recognized information security standard defined by
-                    the International Organization for Standardization (ISO). It effectively demonstrates that Quark.ai
-                    has invested in the tools and systems critical to the protection of the organization’s data, whether
-                    internal or belonging to third parties.
-                </p>
-                <p class="quark_p">
-                    Quark.ai uses Drata’s automated platform to continuously monitor its internal security controls.
-                    Drata is the world’s most advanced security and compliance automation platform, with a mission to
-                    help businesses earn and keep the trust of their users, customers, partners, and prospects.
-                </p> <br>
-                <p class="quark_p">
-                    “The ISO/IEC Certificate is a pillar of customer trust,” said Quark.ai Co-Founder and CEO Prosenjit
-                    Sen. “This certification demonstrates that Quark.ai’s Information Management System meets the
-                    highest possible standards.”
-                </p> <br>
-                <p class="quark_p">
-                    “Quark.ai’s SaaS-based autonomous support platform utilizes AI based concepts and analytics
-                    capabilities to resolve complex technical support cases while drastically reducing the time and
-                    effort spent on delivering accurate resolutions,” the certificate states. “The systems in scope of
-                    the ISO/IEC 27001:2013 certification are the underlying infrastructure and processes supporting the
-                    platform.”
-                </p> <br>
-                <p class="quark_p">
-                    The Quark.ai platform is designed to ensure that B2B eCommerce customers have quick and easy access
-                    to needed and accurate product information. Whether serving a customer service agent or via its
-                    self-service intelligent and conversational Autonomous Support chatbot, Quark.ai Autonomous B2B
-                    eCommerce Support provides instant access to the right answers by automatically and accurately
-                    interpreting customer inquiries. Quark.ai improves informational integrity by ingesting and
-                    analyzing an enterprise’s existing product information from across its entire organization.
-                </p>
-
-                <h3>About Quark.ai</h3>
-                <p class="quark_p">
-                    Quark.ai is the technology leader in Autonomous Customer Support and Autonomous B2B eCommerce
-                    Support. Quark.ai’s multi-channel platform combines Deep Learning, Natural Language Processing and
-                    Computer Vision to interpret complex customer cases and automatically provide resolutions at scale
-                    with unsurpassed accuracy and speed. The result is unrivaled efficiency and scalability in Customer
-                    Support, with lower escalations, higher Customer Satisfaction and significant cost savings. More
-                    information may be found at https://quark.ai.
-                </p> <br>
-                <p class="quark_p">
-                    Contact: <br>
-                    Robert Ferri <br>
-                    Robert.ferri@robertferri.com <br>
-                    (415) 575-1589
-                </p> -->
+            <div id="dynamicImg">
             </div>
-        </div> <!-- end about-desc -->
-
-
-
-
-
-        <div>
-            <h4 id="title"></h4>
-            <h6 id="date"></h6>
-            <p class="quark_p" id="text"> </p>
+            <div class="col-full" id="dynamicNew">
+            </div>
         </div>
 
 
@@ -184,22 +114,396 @@
             const news = [
                 {
                     id: 1,
-                    htmlContent: `<div class="quark_news-container" id="post-1">
-                        <input type="checkbox" class="read-more-state" />
-                        <h4> <b> Quark.ai CEO, in Digital Commerce 360 – Part 3: discusses strategies to boost self-service
-                                for post-sales support</b></h4>
-                        <h6>Nov 17, 2022</h6>
-
-                        <p class="quark_p overflow-ellipsis box read-more-wrap">
-                            In this third of a 4-part series on using AI and machine learning in B2B ecommerce, Prosenjit
-                            Sen, founder and CEO of AI technology provider Quark.ai, covers how AI and machine learning
-                            technology can upgrade post-sale as well as pre-sale customer support to boost
-                            <a href="/news-read-more?id=1">Read more</a>
+                    htmlDate:
+                        `<h3 class="subhead">
+                            Nov 10, 2020
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                        Quark.ai Brings Unsurpassed Accuracy, Speed, and Scale To Enterprise Customer Responsiveness
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                           <b> San Jose, CA. 11/10/2020 / </b> PRNewswire— Quark.ai, a SaaS technology vanguard provider of Autonomous Customer Support, announced today that the Quark.ai Autonomous Support Platform has been successfully deployed at Fortune 1000 companies in the High Tech sector and, through Quark.ai partner Quantum Ventura, at one of the US federal government’s most prominent medical services agencies.
                         </p>
+                        <br>
+                        <p class="quark_p">
+                            The multi-channel Quark.ai platform combines Deep Learning, NLP, and Computer Vision to interpret complex customer cases and automatically provide resolutions with high accuracy and speed, resulting in higher Customer Satisfaction (CSAT) and significantly lower support costs.  Quark.ai’s unique IP enables the platform to be deployed at High-Tech companies with no additional training for its Deep Learning models, enabling customers to realize ROI in a matter of months. Quark.ai resolutions eliminate hours of document reviews by support engineers and can also be used for “auto-response.”  Auto-response is a process in which Quark.ai automatically responds to a case or takes corrective actions, for resolutions in which it has very high confidence. Quark.ai can deliver an increase in support productivity of over 40%. 
+                        </p>
+                        <br>
+                        <p class="quark_p">
+                            ”For the federal medical services agency project, we were looking for a fast NLP/ NLU engine able to train rapidly and provide accurate information,” said Srini Vasan, CEO of Quantum Ventura Inc. “Quark.ai’s technology was rapidly deployed with minimal effort for the complex domain using NLP, NLU, and Voice Recognition, and it was able to quickly interpret and cognitively understand highly sophisticated and complex sentences, even those spoken in five different ways.”    
+                        </p>
+                        <br>
+                        <p class="quark_p">
+                            “It is gratifying to see our unique platform delivering excellent ROI to customers in private and public sectors,” said Prosenjit Sen, Quark.ai’s Co-Founder and CEO.  “Quark.ai onboards customers rapidly requiring minimal training of our Deep Learning models, the result of the expertise and unique perspective of our CTO, Dr. Sanjeev Kumar, who has worked in this space for over 20 years.”  
+                        </p>
+                        <br>
+                        <h3>About Quark.ai</h3>
+                <p class="quark_p">
+                    Quark.ai is the technology vanguard provider of Autonomous Customer Support. Quark.ai’s multi-channel platform combines Deep Learning, NLP, and Computer Vision to interpret complex customer cases and automatically provide resolutions at scale with unsurpassed accuracy and speed. The result is unrivaled efficiency and scalability in customer support, with lower escalations, higher CSAT, and significant cost savings.   More information may be found at <a
+                        href="https://quark.ai.">
+                        https://quark.ai.</a>
+                     </p>
+                     <br>
+                     <p class="quark_p">
+                    Contact: <br>
+                    Robert Ferri <br>
+                    Robert.ferri@robertferri.com <br>
+                    (415) 575-1589
+                </p>
+                        </div>
+                    </div>`,
+                    htmlImg:
+                        `<img decoding="async" width="900" height="600" src="https://quark.ai/wp-content/uploads/2020/11/duplicate-similar-support-cases.jpeg" alt="" title="duplicate-similar-support-cases" srcset="https://quark.ai/wp-content/uploads/2020/11/duplicate-similar-support-cases.jpeg 900w, https://quark.ai/wp-content/uploads/2020/11/duplicate-similar-support-cases-480x320.jpeg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 900px, 100vw" class="wp-image-231796">`
+                },
 
+                {
+                    id: 2,
+                    htmlDate:
+                        `<h3 class="subhead">
+                            Jun 8, 2021
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                        Quark.ai Announces Autonomous Customer Support on Salesforce AppExchange, the World’s Leading Enterprise Cloud Marketplace
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            <b>SAN JOSE, Calif., June 8, 2021 </b> /PRNewswire/ — Quark.ai today announced it has launched <b> Quark.ai Autonomous Customer Support on Salesforce AppExchange,</b> empowering enterprise customers to interpret complex customer cases and automatically provide customer support resolutions with accuracy and speed, enabling existing Quark.ai customers to report higher Customer Satisfaction (CSAT) and significantly lower support costs. 
+                        </p>
+                        <br>
 
-                    </div>`
+                        <p class="quark_p">
+                            Quark.ai’s unique IP enables the platform to be deployed at High-Tech and Industrial companies with no additional training for its Deep Learning models, enabling existing Quark.ai customers to report ROI in a matter of months. Quark.ai resolutions can eliminate hours of document research by support engineers and can also be used for auto response.
+                        </p>
+                        <br>
+                        <h3>Built on the Salesforce platform, Quark.ai Automated Customer Support is currently available on AppExchange at Quark.ai-Autonomous-Customer-Support-App </h3>
+                        <br>
+                        <h3>Quark.ai Autonomous Customer Support App</h3>
+                        <p class="quark_p">
+                         Quark.ai’s app enables automation of a customer support process for High Tech and Industrial products that today can be expensive, inefficient and manual. When the customer submits a case in Salesforce, Quark.ai is triggered automatically, which interprets the support case and pulls up resolutions from existing reference documents. When a resolution has a high confidence score, Quark.ai automatically responds to the customer via Auto Response or takes corrective action (Auto Action) based on the content of the resolution. Even if 10 – 20% of support cases are handled with Auto Response, it represents savings to the company, as well as reduction in the overall response time.
+                        </p>
+                        <br>
+                        <h3>Quark.ai in the News</h3>
+                        <ul class="quark_p quark_news-quote">
+                             <li class="">
+                                “It is an honor to bring the power of Autonomous Customer Support to so many enterprises via Salesforce AppExchange,” <b> said Prosenjit Sen, Quark.ai’s Co-Founder and Chief Executive Officer. </b> “Quark.ai interprets complex customer cases and automatically provides resolutions with accuracy and speed. Quark.ai’s ability to onboard customers rapidly with minimal training of the Deep Learning models should be helpful to users.”
+                             </li>
+                             <li class="">
+                                “Quark.ai’s technology can interpret and cognitively understand highly sophisticated and complex sentences, even those spoken in five different ways,” said <b> Srini Vasan, CEO of Quantum Ventura Inc. </b> “Quark.ai was rapidly deployed with minimal effort in a complex domain using NLP, NLU, and Voice Recognition. We were looking for a fast NLP/ NLU engine that was able to train rapidly and provide accurate information, and we found it in Quark.ai.”
+                                 </li>
+                             <li class="">
+                                “Quark.ai is a welcome addition to AppExchange, as it powers digital transformation for customers with its ability to interpret complex customer cases and provide,” said <b> Woodson Martin, GM of Salesforce AppExchange. </b> “AppExchange is constantly evolving to enable our partners to build cutting-edge solutions to drive customer success.”    
+                                </li>
+                        </ul>
+                        <h3>About Salesforce AppExchange</h3>
+
+                        <p class="quark_p">
+                            Salesforce AppExchange, the world’s leading enterprise cloud marketplace, empowers companies, developers and entrepreneurs to build, market and grow in entirely new ways. With more than 6,000 listings, 9 million customer installs and 117,000 peer reviews, AppExchange connects customers of all sizes and across industries to ready-to-install or customizable apps and Salesforce-certified consultants to solve any business challenge.   
+                        </p>
+                        <br>
+                        <h3>Additional Resources</h3>
+
+                        <p class="quark_p">
+                           <ul>
+                                    <li>Like Salesforce on Facebook: <a href"http://www.facebook.com/salesforce "> http://www.facebook.com/salesforce </a> </li>
+                                    <li>Follow Salesforce on Twitter:<a href"https://twitter.com/salesforce"> https://twitter.com/salesforce</a> </li>
+                                    <li>Follow Quark.ai on LinkedIn:<a href"https://www.linkedin.com/company/quarkai "> https://www.linkedin.com/company/quarkai </a> </li>
+                                    <li>Follow Quark.ai on Twitter: <a href"https://twitter.com/quarkai ">https://twitter.com/quarkai </a> </li>
+                            </ul> 
+                        </p>
+                        <br>
+
+                        <p class="quark_p">
+                            Salesforce, AppExchange and others are among the trademarks of salesforce.com, inc.
+                        </p>
+                        <br>
+                        <h3>About Quark.ai</h3>
+                        <p class="quark_p">
+                            Quark.ai is the technology vanguard provider of Autonomous Customer Support. Quark.ai’s multi-channel platform combines Deep Learning, NLP and Computer Vision to interpret complex customer cases and automatically provide resolutions at scale with unsurpassed accuracy and speed. The result is unrivaled efficiency and scalability in customer support, with lower escalations, higher CSAT and significant cost savings.
+                        </p>
+                        <br>
+
+                        </div>
+                    </div>`,
+                    htmlImg: `<img decoding="async" width="2048" height="1536" src="https://quark.ai/wp-content/uploads/2021/06/fabio-oyXis2kALVg-unsplash.jpg" alt="" title="fabio-oyXis2kALVg-unsplash" srcset="https://quark.ai/wp-content/uploads/2021/06/fabio-oyXis2kALVg-unsplash.jpg 2048w, https://quark.ai/wp-content/uploads/2021/06/fabio-oyXis2kALVg-unsplash-1280x960.jpg 1280w, https://quark.ai/wp-content/uploads/2021/06/fabio-oyXis2kALVg-unsplash-980x735.jpg 980w, https://quark.ai/wp-content/uploads/2021/06/fabio-oyXis2kALVg-unsplash-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 2048px, 100vw" class="wp-image-232139">`,
+                },
+                {
+                    id: 3,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 4,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 5,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 6,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 7,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 8,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 9,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 10,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+
+                {
+                    id: 11,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 12,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 13,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 14,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 15,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 16,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
+                },
+                {
+                    id: 17,
+                    htmlDate:
+                        `<h3 class="subhead">
+
+                        </h3>`,
+                    htmlTitle:
+                        ` <h1 class="display-1">
+                   
+                    </h1>`,
+                    htmlContent:
+                        `<div class="col-full">
+                        <p class="quark_p">
+                            
+                        </p>
+                        </div>
+                    </div>`,
                 }
+
+
             ]
 
             //RETRIEVING ALL PARAMETERS FROM URL
@@ -217,9 +521,12 @@
             });
 
             //MODIFYING INNER HTML FOR THE DYNAMIC NEWS CONTAINER
+            document.getElementById("dynamicDate").innerHTML = selectedNewArray[0].htmlDate;
+            document.getElementById("dynamicTitle").innerHTML = selectedNewArray[0].htmlTitle;
             document.getElementById("dynamicNew").innerHTML = selectedNewArray[0].htmlContent;
+            document.getElementById("dynamicImg").innerHTML = selectedNewArray[0].htmlImg;
 
-            //MODIFICAR TITULO Y FECHA
+
 
         </script>
 
