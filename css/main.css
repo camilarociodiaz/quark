@@ -2122,6 +2122,19 @@ img .img-size {
   height: 0;
 }
 
+.quark_container-video_resources {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  margin: 0 !important;
+}
+
+.service-text_resources {
+  display: flex;
+  flex-direction: column;
+}
+
 .quark_video {
   position: absolute;
   top: 0;
@@ -2321,6 +2334,18 @@ img .img-size {
   text-align: justify;
 }
 
+.quark_p_resources {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: justify;
+  padding: 10px;
+  min-height: 20vh;
+}
+
+.quark_video_text_container {
+  background-color: #e0e0e0;
+}
+
 .padding {
   font-size: 1.5rem;
   margin: 0;
@@ -2359,6 +2384,11 @@ img .img-size {
 .quark_center {
   text-align: center;
   margin-top: 1rem;
+}
+
+.quark_center_resources {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /* animate .home-content__main
@@ -4205,16 +4235,15 @@ html.no-csstransitions .home-content__main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
 }
 
 
 .quark_resources {
   background-color: white;
-  padding: 2rem;
-  margin: 2rem;
-  width: vh;
+  max-width: 40%;
+  margin: 20px 20px;
 }
 
 
@@ -4255,8 +4284,8 @@ html.no-csstransitions .home-content__main {
   text-align: center;
   width: 35%;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -4276,11 +4305,11 @@ html.no-csstransitions .home-content__main {
   text-align: center;
   width: 50vh;
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.team img{
+.team img {
   height: 20%;
   width: 40%;
 }
@@ -4293,23 +4322,27 @@ html.no-csstransitions .home-content__main {
   border-width: 1px;
   border-style: solid;
   border-color: #084461;
-  
+
 }
-.btn-linkedin:link, .btn-linkedin:visited {
+
+.btn-linkedin:link,
+.btn-linkedin:visited {
   color: #fff;
 }
-.btn-linkedin:active, .btn-linkedin:hover {
+
+.btn-linkedin:active,
+.btn-linkedin:hover {
   background: #084461;
   color: #fff;
 }
 
-.linkedin-logo{
+.linkedin-logo {
   margin: 10px;
   align-content: center;
   filter: invert(100%);
 }
 
-.linkedin-container{
+.linkedin-container {
   display: flex;
   justify-content: center;
   align-items: center;
