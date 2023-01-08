@@ -4144,8 +4144,8 @@ html.no-csstransitions .home-content__main {
 #dynamicImg {
   display: flex;
 justify-content: center;
-margin-top: 3rem;
-margin-bottom: 3rem;
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
 }
 .quark_news-quote{
   list-style: none;
@@ -4159,6 +4159,11 @@ margin: 5rem 0rem 0rem 2rem;
 padding-left: 2rem;
 border-left-style: solid;
 border-color: #4a95cc;
+}
+
+.quark_img-new-hidden{
+  visibility: hidden;
+  margin: 0rem;
 }
 /*
 .quark_resources {
