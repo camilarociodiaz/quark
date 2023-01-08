@@ -2321,7 +2321,6 @@ img .img-size {
   max-width: unset;
 }
 
-
 .img-product {
   margin: 4rem;
   padding-top: 2rem;
@@ -2340,6 +2339,20 @@ img .img-size {
   text-align: justify;
   padding: 10px;
   min-height: 20vh;
+}
+
+.quark_p_team {
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  min-height: 20vh;
+}
+
+.linkedin_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .quark_video_text_container {
@@ -4219,7 +4232,7 @@ html.no-csstransitions .home-content__main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -4227,7 +4240,7 @@ html.no-csstransitions .home-content__main {
   background-color: white;
   padding: 2rem;
   margin: 2rem;
-  width: 50vh;
+  width: 20vw;
 }
 
 
@@ -4279,10 +4292,10 @@ html.no-csstransitions .home-content__main {
 
 .team-founder {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem;
   text-align: center;
-  width: 35%;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4303,10 +4316,12 @@ html.no-csstransitions .home-content__main {
   padding: 1rem;
   margin: 1rem;
   text-align: center;
-  width: 50vh;
+  width: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 330px;
+  justify-content: space-evenly;
 }
 
 .team img {
@@ -4347,5 +4362,5 @@ html.no-csstransitions .home-content__main {
   justify-content: center;
   align-items: center;
   width: 150px;
-  margin: 1rem;
+  margin: 0;
 }
