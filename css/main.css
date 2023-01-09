@@ -4424,3 +4424,19 @@ html.no-csstransitions .home-content__main {
   .deg270 {
     transform: rotate(270deg) translate(12em) rotate(-270deg);
   }
+
+  .deg72 {
+    transform: rotate(72deg) translate(12em) rotate(-72deg);
+  }
+
+  .deg144 {
+    transform: rotate(144deg) translate(12em) rotate(-144deg);
+  }
+
+  .deg216 {
+    transform: rotate(216deg) translate(12em) rotate(-216deg);
+  }
+
+  .deg288 {
+    transform: rotate(288deg) translate(12em) rotate(-288deg);
+  }
