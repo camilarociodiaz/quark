@@ -2308,12 +2308,21 @@ img .img-size {
   justify-content: space-evenly;
 }
 
+
+
+.introduction-container-mockup {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .img-container-mockup {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 12rem;
 }
 
 .img-mockup {
