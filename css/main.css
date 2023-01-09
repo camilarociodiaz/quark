@@ -2295,6 +2295,11 @@ img .img-size {
   max-width: 1200px;
 }
 
+.quark_row_introduction {
+  width: 30%;
+  max-width: 1200px;
+}
+
 .process__text {
   margin-left: 13.5rem;
   padding-right: 30px;
@@ -2308,13 +2313,26 @@ img .img-size {
   justify-content: space-evenly;
 }
 
+.container-mockup-introduction {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_container_introduction {
+  margin: 0;
+  padding: 0;
+}
+
 
 
 .introduction-container-mockup {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -2642,6 +2660,7 @@ html.no-csstransitions .home-content__main {
   .quark_p {
     font-size: 1.4rem;
   }
+
 }
 
 
@@ -2711,6 +2730,8 @@ html.no-csstransitions .home-content__main {
   .home-sidelinks {
     width: 32rem;
   }
+
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -2941,6 +2962,22 @@ html.no-csstransitions .home-content__main {
     left: 15px;
   }
 
+  .container-mockup-introduction {
+    flex-direction: column;
+  }
+
+  .img-container-mockup {
+    width: unset;
+  }
+
+  .img-mockup {
+    height: 30vh;
+  }
+
+  .quark_row {
+    width: 80%;
+  }
+
   .process__text {
     margin-left: 4.8rem;
     padding-right: 0;
@@ -3015,6 +3052,11 @@ html.no-csstransitions .home-content__main {
 
   .process__text {
     margin-left: 0;
+  }
+
+  .quark_row_introduction {
+    width: 80%;
+    max-width: 1200px;
   }
 }
 
@@ -4314,7 +4356,7 @@ html.no-csstransitions .home-content__main {
 
 .team-founder img {
   border-radius: 50%;
-padding: 2rem;
+  padding: 2rem;
 }
 
 
@@ -4469,4 +4511,3 @@ padding: 2rem;
   align-items: baseline;
   align-content: stretch;
 }
-
