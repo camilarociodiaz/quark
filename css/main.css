@@ -3058,6 +3058,54 @@ html.no-csstransitions .home-content__main {
     width: 80%;
     max-width: 1200px;
   }
+
+  .home-button {
+    margin: 20% 0 0 0;
+  }
+
+  .logos-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .logos-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0 10%;
+  }
+
+  .logo-home {
+    width: 8rem;
+  }
+
+  .quark_resources {
+    max-width: 80% !important;
+  }
+
+  .quark_blog-container {
+    width: unset !important;
+    min-width: unset !important;
+  }
+
+  .circle-container {
+    position: unset !important;
+    width: unset !important;
+    height: unset !important;
+    margin: unset !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .circle-container a img {
+    height: 20% !important;
+  }
+
+
 }
 
 
