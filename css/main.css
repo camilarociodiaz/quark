@@ -479,7 +479,7 @@ dd {
   right: 0;
   top: 80%;
   padding-left: 15rem;
-
+  padding-bottom: 3rem;
 }
 
 .logo-home {
@@ -1464,6 +1464,7 @@ input::-moz-focus-inner {
 @media only screen and (max-width: 400px) {
   .display-1 {
     font-size: 3rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -2804,12 +2805,12 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
   .home-content h1 {
-    font-size: 5rem;
+    font-size: 4.3rem;
   }
 
   .home-content h1+p {
     padding-top: 1rem;
-    padding-left: 0;
+    padding-left: 1rem;
   }
 
   .home-content h1+p::before {
@@ -2822,6 +2823,12 @@ html.no-csstransitions .home-content__main {
     padding-left: 35px;
     padding-right: 35px;
   }
+
+.home-button a {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 
   .home-social {
     left: 30px;
@@ -2839,7 +2846,7 @@ html.no-csstransitions .home-content__main {
 
   .home-scroll {
     right: 30px;
-    bottom: 6rem;
+    bottom: 1rem;
   }
 
   .home-scroll__icon {
@@ -2847,21 +2854,39 @@ html.no-csstransitions .home-content__main {
     width: 4.2rem;
   }
 
+
+  .home-button{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 7rem 0;
+
+  }
+
+  .home-button a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+
   .logos-home {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: 10rem;
+    padding: 0 10%;
+    justify-content: space-evenly;
   }
 
   .logo-home {
+    width: 10rem;
     padding: 0px;
 
   }
 
   .logo-home-award {
     margin-left: 0rem;
+    width: 10rem;
   }
 }
 
@@ -3072,12 +3097,6 @@ html.no-csstransitions .home-content__main {
     margin: 20% 0 0 0;
   }
 
-  .logos-home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
 
   .logos-home {
     display: flex;
@@ -3086,6 +3105,8 @@ html.no-csstransitions .home-content__main {
     align-items: center;
     margin-top: 5rem;
     padding: 0 10%;
+    justify-content: space-evenly;
+    
   }
 
   .logo-home {
@@ -3477,7 +3498,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 800px) {
   .s-works {
-    padding: 10rem 0 21rem;
+    padding: 10rem 0 11rem;
   }
 
   .masonry-wrap {
@@ -3495,7 +3516,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 400px) {
   .s-works {
-    padding: 9.6rem 0 21rem;
+    padding: 9.6rem 0 7rem;
   }
 
   .masonry-wrap {
@@ -4160,7 +4181,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-main {
-    margin-top: 12rem;
+    margin-top: 0rem;
   }
 
   .contact-email {
