@@ -1437,6 +1437,49 @@ input::-moz-focus-inner {
   .subhead {
     font-size: 1.5rem;
   }
+
+
+
+  .circle-container {
+    position: unset !important;
+    width: unset !important;
+    height: unset !important;
+    margin: unset !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .circle-container a {
+    display: unset !important;
+    position: unset !important;
+    width: 35vh;
+
+  }
+
+  .circle-container a img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .deg270{
+transform:unset !important;
+  }
+
+  .deg0{
+    transform: unset !important;
+  }
+
+  .deg90{
+    transform: unset !important;
+  }
+
+  .deg180{
+    transform: unset !important;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2824,10 +2867,10 @@ html.no-csstransitions .home-content__main {
     padding-right: 35px;
   }
 
-.home-button a {
-  font-size: 1.2rem;
-  text-align: center;
-}
+  .home-button a {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
 
   .home-social {
@@ -2855,7 +2898,7 @@ html.no-csstransitions .home-content__main {
   }
 
 
-  .home-button{
+  .home-button {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -2889,6 +2932,8 @@ html.no-csstransitions .home-content__main {
     width: 10rem;
   }
 }
+
+
 
 
 /* ===================================================================
@@ -3039,6 +3084,11 @@ html.no-csstransitions .home-content__main {
   .process__col::before {
     top: -3px;
   }
+
+  .quark_form{
+    margin-top: 4rem;
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -3054,6 +3104,18 @@ html.no-csstransitions .home-content__main {
   .process h4 {
     font-size: 2.4rem;
   }
+
+  .quark_resources {
+    max-width: 80% !important;
+  }
+
+  .quark_contact-child {
+    width: 80vw;
+  
+  }
+
+  
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -3106,16 +3168,14 @@ html.no-csstransitions .home-content__main {
     margin-top: 5rem;
     padding: 0 10%;
     justify-content: space-evenly;
-    
+
   }
 
   .logo-home {
     width: 8rem;
   }
 
-  .quark_resources {
-    max-width: 80% !important;
-  }
+
 
   .quark_blog-container {
     width: unset !important;
@@ -3139,9 +3199,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 15px;
   }
 
-  .quark_contact-child {
-    width: 80vw;
-  }
+
 
   .circle-container a {
     display: unset !important;
@@ -4440,7 +4498,7 @@ html.no-csstransitions .home-content__main {
   margin: 2rem;
   text-align: center;
   width: 25vw;
-  min-width: 50vh;
+  min-width: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
