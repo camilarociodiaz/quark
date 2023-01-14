@@ -1465,19 +1465,19 @@ input::-moz-focus-inner {
     padding: 3rem;
   }
 
-  .deg270{
-transform:unset !important;
-  }
-
-  .deg0{
+  .deg270 {
     transform: unset !important;
   }
 
-  .deg90{
+  .deg0 {
     transform: unset !important;
   }
 
-  .deg180{
+  .deg90 {
+    transform: unset !important;
+  }
+
+  .deg180 {
     transform: unset !important;
   }
 }
@@ -2056,7 +2056,8 @@ img .img-size {
   transition: all 0.5s ease-in-out;
   position: relative;
   color: #ffffff;
-  padding: 2rem;
+  padding: 0rem 1rem 0.1rem 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -3085,7 +3086,7 @@ html.no-csstransitions .home-content__main {
     top: -3px;
   }
 
-  .quark_form{
+  .quark_form {
     margin-top: 4rem;
   }
 
@@ -3111,10 +3112,10 @@ html.no-csstransitions .home-content__main {
 
   .quark_contact-child {
     width: 80vw;
-  
+
   }
 
-  
+
 
 }
 
@@ -4663,4 +4664,11 @@ html.no-csstransitions .home-content__main {
   justify-content: space-around;
   align-items: baseline;
   align-content: stretch;
+}
+
+
+.img-upcoming-events {
+  height: 3.5em;
+  align-content: center;
+  margin-bottom: 0.5rem;
 }
