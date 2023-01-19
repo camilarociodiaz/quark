@@ -3110,10 +3110,6 @@ html.no-csstransitions .home-content__main {
     max-width: 80% !important;
   }
 
-  .quark_contact-child {
-    width: 80vw;
-
-  }
 
 
 
@@ -4167,8 +4163,8 @@ html.no-csstransitions .home-content__main {
     margin-top: 3rem;
   }
 
-  .team{
-  min-width: 36vh;
+  .team {
+    min-width: 36vh;
     max-width: 40vh;
   }
 }
@@ -4666,13 +4662,18 @@ html.no-csstransitions .home-content__main {
 .quark_contact-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: flex-start;
   align-content: stretch;
 }
 
 
-.quark_recaptcha{
+.quark_contact-child {
+  margin: 2rem;
+}
+
+
+.quark_recaptcha {
   padding: 2rem 0 2rem 0;
 
 }
@@ -4681,4 +4682,12 @@ html.no-csstransitions .home-content__main {
   height: 3.5em;
   align-content: center;
   margin-bottom: 0.5rem;
+}
+
+.hs_submit {
+  background: #c1c1c1;
+  border-color: #626262;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px;
 }
