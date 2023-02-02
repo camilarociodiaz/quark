@@ -4185,6 +4185,9 @@ html.no-csstransitions .home-content__main {
   .contact-social {
     font-size: 2.4rem;
   }
+
+
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -4690,4 +4693,31 @@ html.no-csstransitions .home-content__main {
   color: #ffffff;
   font-size: 12px;
   line-height: 12px;
+}
+
+
+.ff-powered-img{
+visibility: hidden;
+}
+
+
+
+
+.ff-form .ff-item .ff-item-qs {
+  margin: 0px;
+  padding: 0px;
+  width: 75%;
+  padding-block: var(--ff-size-1);
+}
+
+
+.btn, button, input[type="submit"], input[type="reset"], input[type="button"] {
+}
+
+.ff-button-bar [type="button"] {
+visibility: visible;
+}
+
+.btn-primary{
+  visibility: hidden;
 }
