@@ -145,20 +145,104 @@
 
         </div>
 
-        <div id="ff-compose"></div>
-        <script async defer
-            src="https://formfacade.com/include/111259845980398253610/form/1FAIpQLSd6KRNHzNH0DTmDN62miIpv3BhJO0WWY-El174ZhWYHm8uEKQ/clean.js?div=ff-compose"></script>
+
+        <!--------------- form calculator 
+                ================================================== -->
+
+
+        <div>
+            <div id="ff-compose"></div>
+            <script async defer
+                src="https://formfacade.com/include/111259845980398253610/form/1FAIpQLSd6KRNHzNH0DTmDN62miIpv3BhJO0WWY-El174ZhWYHm8uEKQ/clean.js?div=ff-compose">
+                </script>
+
+        </div>
 
 
 
+        <!--------------- chart  
+                ================================================== -->
 
-            
+
+        <div class="quark_chart"><canvas id="myChart"></canvas></div>
+
+
+        <input type="text" class="ff-widget-control form-control" id="Display583979639" value="540000" readonly="">
+        <input type="text" class="ff-widget-control form-control" id="Display1199566653" value="189000" readonly="">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+
+            const currently_value_cost = 1800000
+            const quark_value_cost = 1071000
+            const quark_value_deflection = document.getElementById("Display583979639").value;
+            const quark_value_productivity =  document.getElementById("Display1199566653").value;
+
+
+            console.log(quark_value_deflection);
+            console.log(quark_value_productivity);
+          
+
+            const NUMBER_COST = { currently: currently_value_cost, quark: quark_value_cost };
+            const NUMBER_DEFLECTION = { currently: 0, quark: quark_value_deflection };
+            const NUMBER_PRODUCTIVITY = { currently: 0, quark: quark_value_productivity };
+
+
+
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    datasets: [
+                        {
+                            label: 'Cost',
+                            data: NUMBER_COST,
+                        },
+                        {
+                            label: 'Saving from Deflection',
+                            data: NUMBER_DEFLECTION,
+                        },
+                        {
+                            label: 'Savings from increased productivity',
+                            data: NUMBER_PRODUCTIVITY,
+                        },
+                    ],
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Calculate Your Support Costs and Potential Savings'
+                        },
+                    },
+                    responsive: true,
+                    scales: {
+                        x: {
+                            stacked: true,
+                        },
+                        y: {
+                            stacked: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+
+
 
     </section>
 
 
 
- <!-- contact
+
+
+
+
+    <!-- contact
     ================================================== -->
     <section id="contact" class="s-contact">
 
@@ -211,6 +295,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
 
 
 </body>

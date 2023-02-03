@@ -4711,9 +4711,6 @@ visibility: hidden;
 }
 
 
-.btn, button, input[type="submit"], input[type="reset"], input[type="button"] {
-}
-
 .ff-button-bar [type="button"] {
 visibility: visible;
 }
@@ -4721,3 +4718,13 @@ visibility: visible;
 .btn-primary{
   visibility: hidden;
 }
+
+.quark_chart{
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+
