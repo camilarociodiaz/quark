@@ -4696,35 +4696,39 @@ html.no-csstransitions .home-content__main {
 }
 
 
-.ff-powered-img{
-visibility: hidden;
-}
-
-
-
-
-.ff-form .ff-item .ff-item-qs {
-  margin: 0px;
-  padding: 0px;
-  width: 75%;
-  padding-block: var(--ff-size-1);
-}
-
-
-.ff-button-bar [type="button"] {
-visibility: visible;
-}
-
-.btn-primary{
+.ff-powered-img {
   visibility: hidden;
 }
 
-.quark_chart{
+
+
+
+.ff-button-bar [type="button"] {
+  visibility: visible;
+}
+
+.btn-primary {
+  visibility: hidden;
+}
+
+.quark_chart {
   display: flex;
   margin: 2rem;
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+
+
+
+.ff-layout-2column .ff-secfields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 

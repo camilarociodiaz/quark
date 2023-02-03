@@ -41,7 +41,7 @@
 
 </head>
 
-<body id="top" onload="script();">
+<body id="top">
 
     <!-- header
     ================================================== -->
@@ -141,87 +141,120 @@
         <!-- form
     ================================================== -->
         <div class="col-full">
-            <div id="dynamicTitle"></div>
-            <div id="dynamicForm">
-                <div id="dynamicScript"></div>
-                <script async defer src=""></script>
+
+
+
+            <div>
+                <h2 style="text-align: center;"> Saving calculator </h2>
             </div>
+            <div id="ff-compose"></div>
+            <script async defer
+                src="https://formfacade.com/include/111259845980398253610/form/1FAIpQLSd6KRNHzNH0DTmDN62miIpv3BhJO0WWY-El174ZhWYHm8uEKQ/clean.js?div=ff-compose"></script>
+
         </div>
-
-        <div>
-            <h3 style="text-align: center;"> Please, complete your email address to get access to the calculator</h3>
-        </div>
-
-        <div id="ff-compose"></div>
-        <script async defer
-            src="https://formfacade.com/include/111259845980398253610/form/1FAIpQLSfV_tAPSiN2tHyHOGc86E1dRVwyjclhNye-YXzuzYJLfID4FA/clean.js?div=ff-compose"></script>
-
-
-
-
 
         <!-- end form
     ================================================== -->
 
 
 
+
+
+        <!--------------- chart  
+                ================================================== -->
+
+
+        <!-- <button onclick="seeChart()">
+            chart
+        </button> -->
+
+        <div class="quark_chart"><canvas id="myChart"></canvas></div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
         <script>
 
-            //THIS SCRIPT WILL RUN AFTER BODY IS LOADED
-            const news = [
-                {
-                    id: 1,
-                    htmlTitle: `<h2 style="text-align: center;"> Saving calculator </h2> `,
-                    htmlForm:
-                        `  <div id="ff-compose"></div>`,
 
-                },
-           
-            ]
-
-            //RETRIEVING ALL PARAMETERS FROM URL
-            var options = window.location.search.slice(1)
-                .split('&')
-                .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
-                    b = b.split('=');
-                    a[b[0]] = decodeURIComponent(b[1]);
-                    return a;
-                }, {});
+            const currently_value_cost = (document.getElementById("Widget948182816").value) * (document.getElementById("Widget1199022842").value);
+            const quark_value_cost = currently_value_cost - document.getElementById("Display1440058641").value;
+            const quark_value_deflection = document.getElementById("Display583979639").value;
+            const quark_value_productivity = document.getElementById("Display1199566653").value;
 
 
-            //FILTERING THE NEWS ARRAY
-            var selectedNewArray = news.filter(function (el) {
-                return el.id == options.id;
-            });
 
-            //MODIFYING INNER HTML FOR THE DYNAMIC NEWS CONTAINER
-
-            function script() {
-                document.getElementById("dynamicForm").innerHTML = selectedNewArray[0].htmlForm;
-                document.getElementById("dynamicTitle").innerHTML = selectedNewArray[0].htmlTitle;
+            // // const currently_value_cost = 1800000
+            // // const quark_value_cost = 1071000
+            // // const quark_value_deflection = 540000
+            // // const quark_value_productivity = 189000
 
 
-                const script = document.createElement('script');
-                script.src =
-                    'https://formfacade.com/include/111259845980398253610/form/1FAIpQLSd6KRNHzNH0DTmDN62miIpv3BhJO0WWY-El174ZhWYHm8uEKQ/clean.js?div=ff-compose';
 
-                script.async = true;
+            console.log("currently", currently_value_cost);
+            console.log("with quark", quark_value_cost);
+            console.log("deflection", quark_value_deflection);
+            console.log("productivity", quark_value_productivity);
 
-                script.onload = () => {
-                    console.log('Script loaded successfuly');
-                    const box = document.getElementById('box');
-                    box.textContent = 'The script has loaded.';
-                };
 
-                script.onerror = () => {
-                    console.log('Error occurred while loading script');
-                };
+            const NUMBER_COST = { currently: 1800000, quark: 1071000 };
+            const NUMBER_DEFLECTION = { currently: 0, quark: 540000 };
+            const NUMBER_PRODUCTIVITY = { currently: 0, quark: 189000 };
 
-                document.body.appendChild(script);
 
+
+            // const NUMBER_COST = { currently: currently_value_cost, quark: quark_value_cost };
+            // const NUMBER_DEFLECTION = { currently: 0, quark: quark_value_deflection };
+            // const NUMBER_PRODUCTIVIT = { currently: 0, quark: quark_value_productivity };
+
+
+            function seeChart() {
+                const ctx = document.getElementById('myChart');
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        datasets: [
+                            {
+                                label: 'Cost',
+                                data: NUMBER_COST,
+
+                            },
+                            {
+                                label: 'Saving from Deflection',
+                                data: NUMBER_DEFLECTION,
+
+                            },
+                            {
+                                label: 'Savings from increased productivity',
+                                data: NUMBER_PRODUCTIVITY,
+
+                            },
+                        ],
+                    },
+                    options: {
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Calculate Your Support Costs and Potential Savings'
+                            },
+                        },
+                        responsive: true,
+                        scales: {
+                            x: {
+                                stacked: true,
+                            },
+                            y: {
+                                stacked: true
+                            }
+                        }
+                    }
+                });
             }
 
         </script>
+
+
 
 
     </section>
