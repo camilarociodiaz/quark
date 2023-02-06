@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calculator.css">
 
     <!-- script
     ================================================== -->
@@ -39,96 +40,110 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+
+    <!-- chartJS
+    ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 </head>
 
 <body id="top">
 
     <!-- header
     ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo-quark-white.svg" class="img-size" alt="Homepage">
-            </a>
-        </div> <!-- end header-logo -->
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3>Quark.ai</h3>
-
-                <ol class="header-nav__list">
-                    <li class="current"><a href="/index.html">Home</a></li>
-                    <li><a href="/index.html#introduction">Introduction</a></li>
-                    <li><a href="/index.html#product">Product</a></li>
-                    <li><a href="/index.html#technology">Technology</a></li>
-                    <li><a href="/news.html">News</a></li>
-                    <li><a href="/video-library.html">Video Library</a></li>
-                    <li><a href="/partners.html">Partners</a></li>
-                    <li><a href="/blog.html">Blog</a></li>
-                    <li><a>About Us</a></li>
-                </ol>
-                <ul class="header-nav__detail">
-                    <li><a class="nav-detail" href="/company.html">Company </a></li>
-                    <li><a class="nav-detail" href="/team.html">Team </a></li>
-                    <li><a class="nav-detail" href="/investors.html">Investors </a></li>
-                    <li><a class="nav-detail" href="/contact.html">Contact Us </a></li>
-                </ul>
-            </div> <!-- end header-nav__content -->
-
-        </nav> <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section class="banner" data-parallax="scroll" data-image-src="/images/img-investors.jpg" data-position-y=top>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-        </div> <!-- end home-content -->
-
-    </section> <!-- end s-home -->
-
-
 
 
     <section id='introduction' class="s-about">
 
+        <div class="row section-header">
+            <div>
+                <a class="site-logo" href="index.html">
+                    <img src="images/logo-quark-blue.svg" class="img-size" alt="Homepage" style="width: 20rem;">
+                </a>
+            </div>
+
+            <div class="col-full">
+                <h3 class="subhead">Saving calculator</h3>
+            </div>
+        </div>
 
 
 
-        <div class="container-mockup-introduction">
-            <div class="quark_row_introduction">
-                <div class="about-process process block-1-2 block-tab-full">
-                    <div data-aos="">
-                        <div class="text_container_introduction">
-                            <h3 class="subhead">Free estimate</h3>
-                            <h1 class="display-1"> Reduce Your Customer Support Productivity Tax</h1>
+        <!-- calculator
+    ================================================== -->
 
-                            <p class="quark_p">
-                                Use our free online calculator to find out how much you can reduce your Customer
-                                Support Productivity Tax and achieve industry leading ROI, all while enhancing
-                                customer satisfaction and NPS scoring.
-                            </p>
+        <div class="calculator-container">
+            <div class="border-container">
+                <h6> Insert your data here: </h6>
+                
+                    <div class="input-div">
+                        <h5 class="font-calculator">Current Tickets Per Year: </h5>
+                        <input class="input-calculator" type="text" id="current-tickets" placeholder="100000"
+                            onkeyup="inputs(this.value)">
+                        <h5 class="font-calculator-end"> </h5>
+                    </div>
+                    <p id="demo"></p>
+                    <div class="input-div">
+                        <h5 class="font-calculator">Cost Per Ticket: $</h5>
+                        <input class="input-calculator" type="text" id="cost-ticket" placeholder="18"
+                            onkeyup="inputs(this.value)">
+                        <h5 class="font-calculator-end"></h5>
+                    </div>
+                    <p id="demo2"></p>
+
+                    <div class="input-div">
+                        <h5 class="font-calculator"> Target Deflection Percentage:</h5>
+                        <input type="text" class="input-calculator" id="target-deflection" placeholder="30"
+                            onkeyup="inputs(this.value)">
+                        <h5 class="font-calculator-end">%</h5>
+                    </div>
+                    <p id="demo3"></p>
+                    <div class="input-div">
+                        <h5 class="font-calculator"> Target SE Productivity Increase:</h5>
+                        <input class="input-calculator" type="text" id="target-productivity" placeholder="15"
+                            onkeyup="inputs(this.value)">
+                        <h5 class="font-calculator-end">%</h5>
+                    </div>
+                    <p id="demo4"></p>
+               
+            </div>
+
+            <div class="border-container">
+
+                <h6> Results </h6>
+                <div>
+                    <div class="input-div">
+                        <h5 class="font-calculator">Tickets Deflected</h5>
+                        <h5 class="font-calculator-end"></h5>
+                        <p class="input-calculator" id="result1"> 23324</p>
+                    </div>
+                    <div class="input-div">
+                        <h5 class="font-calculator">Ticket After Reflection</h5>
+                        <h5 class="font-calculator-end"></h5>
+                        <p class="input-calculator" id="result5">2424 </p>
+                    </div>
+
+                    <div>
+                        <div class="input-div">
+                            <h5 class="font-calculator">Savings From Deflection</h5>
+                            <h5 class="font-calculator-end">$</h5>
+                            <p class="input-calculator" id="result2"> </p>
+                        </div>
+                        <div class="input-div">
+                            <h5 class="font-calculator">Savings From Productivity Increase</h5>
+                            <h5 class="font-calculator-end">$</h5>
+                            <p class="input-calculator" id="result3"> </p>
+                        </div>
+                        <div class="input-div backgroundGreen">
+                            <h5 class="font-calculator font-bolded "> Total
+                                Savings </h5>
+                            <h5 class="font-calculator-end font-bolded">$ </h5>
+                            <p class="input-calculator font-bolded" id="result4"> 203203 </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="img-container-mockup">
-                <img class="img-mockup" style="max-height: 250px;" src="/images/mockups-15.png" alt="">
-                <img class="img-mockup" style="max-height: 250px;" src="/images/mockups-09.png" alt="">
-
-            </div>
         </div>
 
 
@@ -138,23 +153,13 @@
 
 
 
-        <!-- form
+        <!-- end calculator
     ================================================== -->
-        <div class="col-full">
 
 
 
-            <div>
-                <h2 style="text-align: center;"> Saving calculator </h2>
-            </div>
-            <div id="ff-compose"></div>
-            <script async defer
-                src="https://formfacade.com/include/111259845980398253610/form/1FAIpQLSd6KRNHzNH0DTmDN62miIpv3BhJO0WWY-El174ZhWYHm8uEKQ/clean.js?div=ff-compose"></script>
 
-        </div>
 
-        <!-- end form
-    ================================================== -->
 
 
 
@@ -164,97 +169,18 @@
                 ================================================== -->
 
 
-        <!-- <button onclick="seeChart()">
+        <button onclick="seeChart()">
             chart
-        </button> -->
+        </button>
+
 
         <div class="quark_chart"><canvas id="myChart"></canvas></div>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-        <script>
 
 
-            // const currently_value_cost = (document.getElementById("Widget948182816").value) * (document.getElementById("Widget1199022842").value);
-            // const quark_value_cost = currently_value_cost - document.getElementById("Display1440058641").value;
-            // const quark_value_deflection = document.getElementById("Display583979639").value;
-            // const quark_value_productivity = document.getElementById("Display1199566653").value;
-
-
-
-            // // const currently_value_cost = 1800000
-            // // const quark_value_cost = 1071000
-            // // const quark_value_deflection = 540000
-            // // const quark_value_productivity = 189000
-
-
-
-            // console.log("currently", currently_value_cost);
-            // console.log("with quark", quark_value_cost);
-            // console.log("deflection", quark_value_deflection);
-            // console.log("productivity", quark_value_productivity);
-
-
-            const NUMBER_COST = { currently: 1800000, quark: 1071000 };
-            const NUMBER_DEFLECTION = { currently: 0, quark: 540000 };
-            const NUMBER_PRODUCTIVITY = { currently: 0, quark: 189000 };
-
-
-
-            // const NUMBER_COST = { currently: currently_value_cost, quark: quark_value_cost };
-            // const NUMBER_DEFLECTION = { currently: 0, quark: quark_value_deflection };
-            // const NUMBER_PRODUCTIVIT = { currently: 0, quark: quark_value_productivity };
-
-
-            function seeChart() {
-                const ctx = document.getElementById('myChart');
-
-                new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        datasets: [
-                            {
-                                label: 'Cost',
-                                data: NUMBER_COST,
-
-                            },
-                            {
-                                label: 'Saving from Deflection',
-                                data: NUMBER_DEFLECTION,
-
-                            },
-                            {
-                                label: 'Savings from increased productivity',
-                                data: NUMBER_PRODUCTIVITY,
-
-                            },
-                        ],
-                    },
-                    options: {
-                        plugins: {
-                            title: {
-                                display: true,
-                                text: 'Calculate Your Support Costs and Potential Savings'
-                            },
-                        },
-                        responsive: true,
-                        scales: {
-                            x: {
-                                stacked: true,
-                            },
-                            y: {
-                                stacked: true
-                            }
-                        }
-                    }
-                });
-            }
-
-        </script>
-
-
+        <button onclick="window.print()">Save PDF</button>
 
 
     </section>
@@ -318,6 +244,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/savingCalculator.js"></script>
 
 
 </body>
