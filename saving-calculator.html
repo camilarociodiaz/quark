@@ -54,7 +54,7 @@
     ================================================== -->
 
 
-    <section id='introduction' class="s-about">
+    <section id='introduction' class="s-about" style="padding-top: 3rem;">
 
         <div class="row section-header">
             <div>
@@ -76,81 +76,76 @@
         <div class="calculator-container">
             <div class="border-container">
                 <h6> Insert your data here: </h6>
-                
-                    <div class="input-div">
-                        <h5 class="font-calculator">Current Tickets Per Year: </h5>
-                        <input class="input-calculator" type="text" id="current-tickets" placeholder="100000"
-                            onkeyup="inputs(this.value)">
-                        <h5 class="font-calculator-end"> </h5>
-                    </div>
-                    <p id="demo"></p>
-                    <div class="input-div">
-                        <h5 class="font-calculator">Cost Per Ticket: $</h5>
-                        <input class="input-calculator" type="text" id="cost-ticket" placeholder="18"
-                            onkeyup="inputs(this.value)">
-                        <h5 class="font-calculator-end"></h5>
-                    </div>
-                    <p id="demo2"></p>
 
-                    <div class="input-div">
-                        <h5 class="font-calculator"> Target Deflection Percentage:</h5>
-                        <input type="text" class="input-calculator" id="target-deflection" placeholder="30"
-                            onkeyup="inputs(this.value)">
-                        <h5 class="font-calculator-end">%</h5>
-                    </div>
-                    <p id="demo3"></p>
-                    <div class="input-div">
-                        <h5 class="font-calculator"> Target SE Productivity Increase:</h5>
-                        <input class="input-calculator" type="text" id="target-productivity" placeholder="15"
-                            onkeyup="inputs(this.value)">
-                        <h5 class="font-calculator-end">%</h5>
-                    </div>
-                    <p id="demo4"></p>
-               
+                <div class="input-div backgroundLightYellow ">
+                    <h5 class="font-calculator">Current Tickets Per Year: </h5>
+                    <input class="input-calculator" style="background-color: white;" type="text" id="current-tickets" placeholder="100000"
+                        onkeyup="inputs(this.value)">
+                    <h5 class="font-calculator-end"> </h5>
+                </div>
+
+                <div class="input-div backgroundLightYellow">
+                    <h5 class="font-calculator">Cost Per Ticket: $</h5>
+                    <input class="input-calculator" style="background-color: white;" type="text" id="cost-ticket" placeholder="18"
+                        onkeyup="inputs(this.value)">
+                    <h5 class="font-calculator-end"></h5>
+                </div>
+
+
+                <div class="input-div backgroundLightYellow">
+                    <h5 class="font-calculator"> Target Deflection Percentage:</h5>
+                    <input type="text" class="input-calculator" style="background-color: white;" id="target-deflection" placeholder="30"
+                        onkeyup="inputs(this.value)">
+                    <h5 class="font-calculator-end">%</h5>
+                </div>
+
+                <div class="input-div backgroundLightYellow">
+                    <h5 class="font-calculator"> Target SE Productivity Increase:</h5>
+                    <input class="input-calculator" style="background-color: white;" type="text" id="target-productivity" placeholder="15"
+                        onkeyup="inputs(this.value)">
+                    <h5 class="font-calculator-end">%</h5>
+                </div>
+
+
             </div>
 
             <div class="border-container">
 
                 <h6> Results </h6>
                 <div>
-                    <div class="input-div">
+                    <div class="input-div backgroundLightblue" style="margin: 1rem 0 2rem 0;">
                         <h5 class="font-calculator">Tickets Deflected</h5>
                         <h5 class="font-calculator-end"></h5>
-                        <p class="input-calculator" id="result1"> 23324</p>
+                        <p class="input-calculator" id="result1"> </p>
                     </div>
-                    <div class="input-div">
+                </div>
+                <!-- <div class="input-div">
                         <h5 class="font-calculator">Ticket After Reflection</h5>
                         <h5 class="font-calculator-end"></h5>
                         <p class="input-calculator" id="result5">2424 </p>
-                    </div>
+                    </div> -->
 
-                    <div>
-                        <div class="input-div">
-                            <h5 class="font-calculator">Savings From Deflection</h5>
-                            <h5 class="font-calculator-end">$</h5>
-                            <p class="input-calculator" id="result2"> </p>
-                        </div>
-                        <div class="input-div">
-                            <h5 class="font-calculator">Savings From Productivity Increase</h5>
-                            <h5 class="font-calculator-end">$</h5>
-                            <p class="input-calculator" id="result3"> </p>
-                        </div>
-                        <div class="input-div backgroundGreen">
-                            <h5 class="font-calculator font-bolded "> Total
-                                Savings </h5>
-                            <h5 class="font-calculator-end font-bolded">$ </h5>
-                            <p class="input-calculator font-bolded" id="result4"> 203203 </p>
-                        </div>
+                <div>
+                    <div class="input-div backgroundLightGreen ">
+                        <h5 class="font-calculator">Savings From Deflection</h5>
+                        <h5 class="font-calculator-end"></h5>
+                        <p class="" id="result2"> </p>
+                    </div>
+                    <div class="input-div backgroundLightGreen ">
+                        <h5 class="font-calculator">Savings From Productivity Increase</h5>
+                        <h5 class="font-calculator-end"></h5>
+                        <p class="input-calculator" id="result3"> </p>
+                    </div>
+                    <div class="input-div backgroundGreen">
+                        <h5 class="font-calculator font-bolded "> Total
+                            Savings </h5>
+                        <h5 class="font-calculator-end font-bolded">$</h5>
+                        <p class="input-calculator font-bolded" id="result4"> </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
+        </div>
 
 
         <!-- end calculator
@@ -158,29 +153,50 @@
 
 
 
-
-
-
-
-
-
-
         <!--------------- chart  
                 ================================================== -->
 
 
-        <button onclick="seeChart()">
-            chart
-        </button>
+        <button style="align-content: center;"
+            onclick="seeChart();  seeChart2();  seeChart3(), seeChart4(), seeChart5(), seeChart6(), seeChart7()"> See
+            charts </button>
+
+        <div class="chart-container">
+
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart"></canvas>
+            </div>
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart2"></canvas>
+            </div>
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart3"></canvas>
+
+            </div>
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart4"></canvas>
+            </div>
+
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart5"></canvas>
+            </div>
+
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart6"></canvas>
+            </div>
+
+            <div class="chart-container-ex">
+                <canvas class="quark_chart" id="myChart7"></canvas>
+            </div>
 
 
-        <div class="quark_chart"><canvas id="myChart"></canvas></div>
+        </div>
+
+        <div style="display: flex;     justify-content: center;">
+            <button style="margin: 0rem" onclick="window.print()">Save PDF</button>
+        </div>
 
 
-
-
-
-        <button onclick="window.print()">Save PDF</button>
 
 
     </section>
