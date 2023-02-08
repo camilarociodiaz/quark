@@ -42,8 +42,6 @@ function seeChart() {
     const NUMBER_DEFLECTION_QUARK = { quark: inputsFinished[2] };
 
     const ctx = document.getElementById('myChart');
-    document.getElementById("demo").innerHTML = "You selected: demo";
-
 
     new Chart(ctx,
         {
