@@ -35,9 +35,10 @@ function inputs() {
 }
 
 
-
-
 function seeChart() {
+
+    document.getElementById("chart-01").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart"></canvas>` ;
+    
     const inputsFinished = inputs();
     const NUMBER_DEFLECTION_QUARK = { quark: inputsFinished[2] };
 
@@ -74,10 +75,18 @@ function seeChart() {
         },
 
     );
+
+
+  
+
 }
 
 
+
 function seeChart2() {
+    document.getElementById("chart-02").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart2"></canvas>` ;
+    
+
 
     const inputsFinished = inputs();
     const NUMBER_PRODUCTIVITY_QUARK = { quark: inputsFinished[3] };
@@ -119,6 +128,9 @@ function seeChart2() {
 
 function seeChart3() {
 
+    document.getElementById("chart-03").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart3"></canvas>` ;
+  
+
     const inputsFinished = inputs();
     const TOTAL_SAVINGS = { 'Total Saving From Using Both Modules': inputsFinished[4] };
 
@@ -159,6 +171,8 @@ function seeChart3() {
 
 
 function seeChart4() {
+    document.getElementById("chart-04").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart4"></canvas>` ;
+  
 
     const inputsFinished = inputs();
     const SAVINGS_GENERATED_BY_QUARK = {
@@ -201,6 +215,8 @@ function seeChart4() {
 
 
 function seeChart5() {
+    document.getElementById("chart-05").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart5"></canvas>` ;
+  
 
     const inputsFinished = inputs();
     const SAVINGS_ONLY_DEFLECTION = {
@@ -251,6 +267,8 @@ function seeChart5() {
 
 
 function seeChart6() {
+    document.getElementById("chart-06").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart6"></canvas>` ;
+  
     const inputsFinished = inputs();
     const ticketRemaining  = (parseFloat(inputsFinished[7]) - parseFloat(inputsFinished[8]));
     const productivity =   inputsFinished[5] * ticketRemaining;
@@ -303,6 +321,8 @@ function seeChart6() {
 
 
 function seeChart7() {
+    document.getElementById("chart-07").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart7"></canvas>` ;
+  
     const inputsFinished = inputs();
 
     const deflection = (inputsFinished[5] * inputsFinished[7])
