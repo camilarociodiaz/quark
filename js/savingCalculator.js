@@ -10,19 +10,19 @@ function inputs() {
     // document.getElementById("demo4").innerHTML = "You selected: " + targetProductivity + "%";
 
 
-    const ticketsDeflected = (currentTickets * targetDeflection) / 100;
+    const ticketsDeflected = parseFloat((currentTickets * targetDeflection) / 100);
     document.getElementById("result1").innerHTML = ticketsDeflected;
 
     const ticketsAfterDeflection = (currentTickets - ticketsDeflected);
 
     const savingsDeflection = (ticketsDeflected * costTickets);
-    document.getElementById("result2").innerHTML = "$" + savingsDeflection;
+    document.getElementById("result2").innerHTML = "$" + parseInt(savingsDeflection);
 
     const savingsProductivity = (targetProductivity * costTickets) / 100 * ticketsAfterDeflection;
-    document.getElementById("result3").innerHTML = "$" + savingsProductivity;
+    document.getElementById("result3").innerHTML = "$" + parseInt(savingsProductivity);
 
     const totalSavings = parseFloat(savingsDeflection) + parseFloat(savingsProductivity);
-    document.getElementById("result4").innerHTML = totalSavings;
+    document.getElementById("result4").innerHTML = parseInt(totalSavings);
 
 
     const currentlyTotal = (currentTickets * costTickets);
@@ -362,9 +362,6 @@ function seeChart7() {
     };
 
 
-    console.log(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen))
-
-
     const SAVINGS_TOTAL_20 = {
         '10%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
         '20%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * twentyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
@@ -402,13 +399,6 @@ function seeChart7() {
         '40%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * fourtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
         '50%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * fiftyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
     };
-
-
-    console.log(SAVINGS_TOTAL_10)
-    console.log(SAVINGS_TOTAL_20)
-    console.log(SAVINGS_TOTAL_30)
-    console.log(SAVINGS_TOTAL_40)
-    console.log(SAVINGS_TOTAL_50)
 
     const ctx = document.getElementById('myChart7');
     new Chart(ctx,
