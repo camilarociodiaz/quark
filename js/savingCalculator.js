@@ -29,7 +29,13 @@ function inputs() {
     const withQuark = (currentlyTotal - totalSavings);
 
 
+    if (currentlyTotal && withQuark && savingsDeflection && savingsProductivity && totalSavings && costTickets && ticketsAfterDeflection && currentTickets && ticketsDeflected) {
+        document.getElementById("save-pdf").style.visibility = "visible";
+        document.getElementById("show_results").click()
+    }
+
     return [currentlyTotal, withQuark, savingsDeflection, savingsProductivity, totalSavings, costTickets, ticketsAfterDeflection, currentTickets, ticketsDeflected]
+
 
 
 }
@@ -37,8 +43,8 @@ function inputs() {
 
 function seeChart() {
 
-    document.getElementById("chart-01").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart"></canvas>` ;
-    
+    document.getElementById("chart-01").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart"></canvas>`;
+
     const inputsFinished = inputs();
     const NUMBER_DEFLECTION_QUARK = { quark: inputsFinished[2] };
 
@@ -77,15 +83,15 @@ function seeChart() {
     );
 
 
-  
+
 
 }
 
 
 
 function seeChart2() {
-    document.getElementById("chart-02").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart2"></canvas>` ;
-    
+    document.getElementById("chart-02").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart2"></canvas>`;
+
 
 
     const inputsFinished = inputs();
@@ -128,8 +134,8 @@ function seeChart2() {
 
 function seeChart3() {
 
-    document.getElementById("chart-03").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart3"></canvas>` ;
-  
+    document.getElementById("chart-03").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart3"></canvas>`;
+
 
     const inputsFinished = inputs();
     const TOTAL_SAVINGS = { 'Total Saving From Using Both Modules': inputsFinished[4] };
@@ -171,8 +177,8 @@ function seeChart3() {
 
 
 function seeChart4() {
-    document.getElementById("chart-04").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart4"></canvas>` ;
-  
+    document.getElementById("chart-04").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart4"></canvas>`;
+
 
     const inputsFinished = inputs();
     const SAVINGS_GENERATED_BY_QUARK = {
@@ -215,8 +221,8 @@ function seeChart4() {
 
 
 function seeChart5() {
-    document.getElementById("chart-05").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart5"></canvas>` ;
-  
+    document.getElementById("chart-05").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart5"></canvas>`;
+
 
     const inputsFinished = inputs();
     const SAVINGS_ONLY_DEFLECTION = {
@@ -267,12 +273,12 @@ function seeChart5() {
 
 
 function seeChart6() {
-    document.getElementById("chart-06").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart6"></canvas>` ;
-  
+    document.getElementById("chart-06").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart6"></canvas>`;
+
     const inputsFinished = inputs();
-    const ticketRemaining  = (parseFloat(inputsFinished[7]) - parseFloat(inputsFinished[8]));
-    const productivity =   inputsFinished[5] * ticketRemaining;
-    
+    const ticketRemaining = (parseFloat(inputsFinished[7]) - parseFloat(inputsFinished[8]));
+    const productivity = inputsFinished[5] * ticketRemaining;
+
     const SAVINGS_ONLY_PRODUCTIVITY = {
         '10%': ((productivity * 10) / 100),
         '20%': ((productivity * 20) / 100),
@@ -321,66 +327,66 @@ function seeChart6() {
 
 
 function seeChart7() {
-    document.getElementById("chart-07").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart7"></canvas>` ;
-  
+    document.getElementById("chart-07").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart7"></canvas>`;
+
     const inputsFinished = inputs();
 
     const deflection = (inputsFinished[5] * inputsFinished[7])
-   //saving deflected =  current tickets (inputsFinished[7] ) * porcentaje   * cost per ticket ( inputsFinished[5] )
+    //saving deflected =  current tickets (inputsFinished[7] ) * porcentaje   * cost per ticket ( inputsFinished[5] )
 
-   const productivity =   inputsFinished[5] * inputsFinished[7];
-   // cost per tickets ( inputsFinished[5] )  * porcentaje  productivity * tickets remaining deflection (current tickets inputsFinished[7]  - tickets deflected  ( current ticket inputsFinished[7] * porcentaje deflected)) 
-   //  inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)
+    const productivity = inputsFinished[5] * inputsFinished[7];
+    // cost per tickets ( inputsFinished[5] )  * porcentaje  productivity * tickets remaining deflection (current tickets inputsFinished[7]  - tickets deflected  ( current ticket inputsFinished[7] * porcentaje deflected)) 
+    //  inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)
 
 
-const tenporcent = parseFloat(10/100)
-const twentyporcent = parseFloat(20/100)
-const thirtyporcent = parseFloat(30/100)
-const fourtyporcent = parseFloat(40/100)
-const fiftyporcent = parseFloat(50/100)
+    const tenporcent = parseFloat(10 / 100)
+    const twentyporcent = parseFloat(20 / 100)
+    const thirtyporcent = parseFloat(30 / 100)
+    const fourtyporcent = parseFloat(40 / 100)
+    const fiftyporcent = parseFloat(50 / 100)
 
-const ticketDeflectedTen = parseFloat(inputsFinished[7] * tenporcent )
-const ticketDeflectedTwenty = parseFloat(inputsFinished[7] * twentyporcent )
-const ticketDeflectedThirty = parseFloat(inputsFinished[7] * thirtyporcent )
-const ticketDeflectedFourty = parseFloat(inputsFinished[7] * fourtyporcent )
-const ticketDeflectedFifty = parseFloat(inputsFinished[7] * fiftyporcent )
+    const ticketDeflectedTen = parseFloat(inputsFinished[7] * tenporcent)
+    const ticketDeflectedTwenty = parseFloat(inputsFinished[7] * twentyporcent)
+    const ticketDeflectedThirty = parseFloat(inputsFinished[7] * thirtyporcent)
+    const ticketDeflectedFourty = parseFloat(inputsFinished[7] * fourtyporcent)
+    const ticketDeflectedFifty = parseFloat(inputsFinished[7] * fiftyporcent)
 
-   
+
     const SAVINGS_TOTAL_10 = {
-        '10%': parseFloat(deflection * tenporcent) +  parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)),
+        '10%': parseFloat(deflection * tenporcent) + parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)),
         '20%': parseFloat(deflection * tenporcent) + parseFloat(parseFloat(inputsFinished[5] * twentyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)),
         '30%': parseFloat(deflection * tenporcent) + parseFloat(parseFloat(inputsFinished[5] * thirtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)),
         '40%': parseFloat(deflection * tenporcent) + parseFloat(parseFloat(inputsFinished[5] * fourtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)),
         '50%': parseFloat(deflection * tenporcent) + parseFloat(parseFloat(inputsFinished[5] * fiftyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen)),
- 
+
     };
 
 
-    console.log(parseFloat(  inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen) )
+    console.log(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTen))
 
-    
+
     const SAVINGS_TOTAL_20 = {
-        '10%': parseFloat(deflection * twentyporcent) +  parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
+        '10%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
         '20%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * twentyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
         '30%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * thirtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
         '40%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * fourtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
         '50%': parseFloat(deflection * twentyporcent) + parseFloat(parseFloat(inputsFinished[5] * fiftyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedTwenty)),
- 
+
     };
 
 
 
     const SAVINGS_TOTAL_30 = {
-        '10%': parseFloat(deflection * thirtyporcent) +  parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedThirty)),
+        '10%': parseFloat(deflection * thirtyporcent) + parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedThirty)),
         '20%': parseFloat(deflection * thirtyporcent) + parseFloat(parseFloat(inputsFinished[5] * twentyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedThirty)),
         '30%': parseFloat(deflection * thirtyporcent) + parseFloat(parseFloat(inputsFinished[5] * thirtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedThirty)),
         '40%': parseFloat(deflection * thirtyporcent) + parseFloat(parseFloat(inputsFinished[5] * fourtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedThirty)),
         '50%': parseFloat(deflection * thirtyporcent) + parseFloat(parseFloat(inputsFinished[5] * fiftyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedThirty)),
-   };
+    };
 
 
     const SAVINGS_TOTAL_40 = {
-        '10%': parseFloat(deflection * fourtyporcent) +  parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFourty)),
+        '10%': parseFloat(deflection * fourtyporcent) + parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFourty)),
         '20%': parseFloat(deflection * fourtyporcent) + parseFloat(parseFloat(inputsFinished[5] * twentyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFourty)),
         '30%': parseFloat(deflection * fourtyporcent) + parseFloat(parseFloat(inputsFinished[5] * thirtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFourty)),
         '40%': parseFloat(deflection * fourtyporcent) + parseFloat(parseFloat(inputsFinished[5] * fourtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFourty)),
@@ -390,12 +396,12 @@ const ticketDeflectedFifty = parseFloat(inputsFinished[7] * fiftyporcent )
 
 
     const SAVINGS_TOTAL_50 = {
-        '10%': parseFloat(deflection * fiftyporcent) +  parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
+        '10%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * tenporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
         '20%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * twentyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
         '30%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * thirtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
         '40%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * fourtyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
         '50%': parseFloat(deflection * fiftyporcent) + parseFloat(parseFloat(inputsFinished[5] * fiftyporcent) * parseFloat(inputsFinished[7] - ticketDeflectedFifty)),
-     };
+    };
 
 
     console.log(SAVINGS_TOTAL_10)

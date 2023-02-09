@@ -79,30 +79,31 @@
 
                 <div class="input-div backgroundLightYellow ">
                     <h5 class="font-calculator">Current Tickets Per Year: </h5>
-                    <input class="input-calculator" style="background-color: white;" type="text" id="current-tickets"
-                        placeholder="100000" onkeyup="inputs(this.value)">
+                    <input class="input-calculator" type="number" pattern="[0-9]*" data-delimiter="."
+                        style="background-color: white;" type="text" id="current-tickets" step='0.01'
+                        placeholder='100000.00' onkeyup="inputs()">
                     <h5 class="font-calculator-end"> </h5>
                 </div>
 
                 <div class="input-div backgroundLightYellow">
                     <h5 class="font-calculator">Cost Per Ticket: $</h5>
-                    <input class="input-calculator" style="background-color: white;" type="text" id="cost-ticket"
-                        placeholder="18" onkeyup="inputs(this.value)">
+                    <input class="input-calculator" style="background-color: white;" type="number" id="cost-ticket"
+                        pattern="^\d*(\.\d{0,2})?$" placeholder="18" onkeyup="inputs()">
                     <h5 class="font-calculator-end"></h5>
                 </div>
 
 
                 <div class="input-div backgroundLightYellow">
                     <h5 class="font-calculator"> Target Deflection Percentage:</h5>
-                    <input type="text" class="input-calculator" style="background-color: white;" id="target-deflection"
-                        placeholder="30" onkeyup="inputs(this.value)">
+                    <input type="number" class="input-calculator" style="background-color: white;"
+                        id="target-deflection" placeholder="30" onkeyup="inputs()">
                     <h5 class="font-calculator-end">%</h5>
                 </div>
 
                 <div class="input-div backgroundLightYellow">
                     <h5 class="font-calculator"> Target SE Productivity Increase:</h5>
-                    <input class="input-calculator" style="background-color: white;" type="text"
-                        id="target-productivity" placeholder="15" onkeyup="inputs(this.value)">
+                    <input class="input-calculator" style="background-color: white;" type="number"
+                        id="target-productivity" placeholder="15" onkeyup="inputs()">
                     <h5 class="font-calculator-end">%</h5>
                 </div>
 
@@ -129,7 +130,7 @@
                     <div class="input-div backgroundLightGreen ">
                         <h5 class="font-calculator">Savings From Deflection</h5>
                         <h5 class="font-calculator-end"></h5>
-                        <p class="" id="result2"> </p>
+                        <p class="input-calculator" id="result2"> </p>
                     </div>
                     <div class="input-div backgroundLightGreen ">
                         <h5 class="font-calculator">Savings From Productivity Increase</h5>
@@ -156,9 +157,12 @@
         <!--------------- chart  
                 ================================================== -->
 
-        <div style="display: flex;     justify-content: center;">
+        <div style="display: flex; justify-content: center; visibility: hidden;">
+            <button id="save-pdf" style="margin: 0rem" onclick="window.print()">Save PDF</button>
+        </div>
+        <div style="display: flex;     justify-content: center;display: none;">
 
-            <button style="align-content: center;"
+            <button id="show_results" style="align-content: center; visibility: hidden;"
                 onclick="seeChart();  seeChart2();  seeChart3(), seeChart4(), seeChart5(), seeChart6(), seeChart7()">
                 See
                 charts </button>
@@ -187,9 +191,7 @@
 
         </div>
 
-        <div style="display: flex;     justify-content: center;">
-            <button style="margin: 0rem" onclick="window.print()">Save PDF</button>
-        </div>
+
 
 
 
