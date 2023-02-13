@@ -11,18 +11,18 @@ function inputs() {
 
 
     const ticketsDeflected = parseFloat((currentTickets * targetDeflection) / 100);
-    document.getElementById("result1").innerHTML = ticketsDeflected.toLocaleString('de-DE', {minimumFractionDigits: 0}); "123.456"
+    document.getElementById("result1").innerHTML = ticketsDeflected.toLocaleString('de-DE', { minimumFractionDigits: 0 }); "123.456"
 
     const ticketsAfterDeflection = (currentTickets - ticketsDeflected);
 
     const savingsDeflection = (ticketsDeflected * costTickets);
-    document.getElementById("result2").innerHTML = "$ " + (parseInt(savingsDeflection)).toLocaleString('de-DE', {minimumFractionDigits: 2}); "123.456,00";
+    document.getElementById("result2").innerHTML = "$ " + (parseInt(savingsDeflection)).toLocaleString('de-DE', { minimumFractionDigits: 2 }); "123.456,00";
 
     const savingsProductivity = (targetProductivity * costTickets) / 100 * ticketsAfterDeflection;
-    document.getElementById("result3").innerHTML = "$ " + (parseInt(savingsProductivity)).toLocaleString('de-DE', {minimumFractionDigits: 2}); "123.456,00";
+    document.getElementById("result3").innerHTML = "$ " + (parseInt(savingsProductivity)).toLocaleString('de-DE', { minimumFractionDigits: 2 }); "123.456,00";
 
     const totalSavings = parseFloat(savingsDeflection) + parseFloat(savingsProductivity);
-    document.getElementById("result4").innerHTML = "$ " + (parseInt(totalSavings)).toLocaleString('de-DE', {minimumFractionDigits: 2}); "123.456,00";
+    document.getElementById("result4").innerHTML = "$ " + (parseInt(totalSavings)).toLocaleString('de-DE', { minimumFractionDigits: 2 }); "123.456,00";
 
 
     const currentlyTotal = (currentTickets * costTickets);
@@ -30,7 +30,7 @@ function inputs() {
 
 
     if (currentlyTotal && withQuark && savingsDeflection && savingsProductivity && totalSavings && costTickets && ticketsAfterDeflection && currentTickets && ticketsDeflected) {
-        document.getElementById("save-pdf").style.visibility = "visible" 
+        document.getElementById("save-pdf").style.visibility = "visible"
         document.getElementById("show_results").click()
     }
 
@@ -199,6 +199,16 @@ function seeChart4() {
         currency: 'USD',
     });
 
+    const footer = (tooltipItems) => {
+        let sum = 0;
+
+        tooltipItems.forEach(function (tooltipItem) {
+            sum += tooltipItem.parsed.y;
+        });
+        return '$' + sum;
+    };
+
+
 
     new Chart(ctx,
 
@@ -218,25 +228,39 @@ function seeChart4() {
                 ]
             },
             options: {
-                tooltips: {
-                    callbacks: {
-                        label: function (tooltipItem, data) {
-                            return formatter.format(tooltipItem.yLabel);
-                        },
-                    },
+
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                let label = context.dataset.label || '';
+
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                }
+                                return label;
+                            }
+                        }
+                    }
                 },
                 scales: {
-                    yAxes: [{
+                    y: {
                         ticks: {
-                            beginAtZero: false
+                            callback: value => `$ ${value}`
                         }
-                    }]
-                },
+                    }
+                }
             }
         },
     );
-}
 
+
+
+
+}
 
 function seeChart5() {
     document.getElementById("chart-05").innerHTML = ` <canvas class="quark_chart chart-container-ex" id="myChart5"></canvas>`;
