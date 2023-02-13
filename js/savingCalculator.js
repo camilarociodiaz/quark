@@ -11,18 +11,18 @@ function inputs() {
 
 
     const ticketsDeflected = parseFloat((currentTickets * targetDeflection) / 100);
-    document.getElementById("result1").innerHTML = ticketsDeflected.toLocaleString();
+    document.getElementById("result1").innerHTML = ticketsDeflected.toLocaleString('de-DE', {minimumFractionDigits: 0}); "123.456"
 
     const ticketsAfterDeflection = (currentTickets - ticketsDeflected);
 
     const savingsDeflection = (ticketsDeflected * costTickets);
-    document.getElementById("result2").innerHTML = "$ " + parseInt(savingsDeflection);
+    document.getElementById("result2").innerHTML = "$ " + (parseInt(savingsDeflection)).toLocaleString('de-DE', {minimumFractionDigits: 2}); "123.456,00";
 
     const savingsProductivity = (targetProductivity * costTickets) / 100 * ticketsAfterDeflection;
-    document.getElementById("result3").innerHTML = "$ " + parseInt(savingsProductivity);
+    document.getElementById("result3").innerHTML = "$ " + (parseInt(savingsProductivity)).toLocaleString('de-DE', {minimumFractionDigits: 2}); "123.456,00";
 
     const totalSavings = parseFloat(savingsDeflection) + parseFloat(savingsProductivity);
-    document.getElementById("result4").innerHTML = "$ " + parseInt(totalSavings);
+    document.getElementById("result4").innerHTML = "$ " + (parseInt(totalSavings)).toLocaleString('de-DE', {minimumFractionDigits: 2}); "123.456,00";
 
 
     const currentlyTotal = (currentTickets * costTickets);
@@ -30,7 +30,7 @@ function inputs() {
 
 
     if (currentlyTotal && withQuark && savingsDeflection && savingsProductivity && totalSavings && costTickets && ticketsAfterDeflection && currentTickets && ticketsDeflected) {
-        document.getElementById("save-pdf").style.visibility = "visible";
+        document.getElementById("save-pdf").style.visibility = "visible" 
         document.getElementById("show_results").click()
     }
 
@@ -569,5 +569,3 @@ function seeChart7() {
     //     }
     // },
 
-    var n = 34523453.345;
-    console.log(n.toLocaleString());    // "34,523,453.345"

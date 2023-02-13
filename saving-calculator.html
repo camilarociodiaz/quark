@@ -123,7 +123,7 @@
                 <div class="input-div backgroundLightYellow ">
                     <h5 class="font-calculator">Current Tickets Per Year: </h5>
                     <input class="input-calculator" type="number" pattern="[0-9]*" data-delimiter="." step="0.001" min="0" lang="en"
-                        style="background-color: white;" type="text" id="current-tickets" placeholder='100000'
+                        type="text" id="current-tickets" placeholder='100000'
                         onkeyup="inputs()">
                     <h5 class="font-calculator-end"> </h5>
                 </div>
@@ -136,7 +136,7 @@
     <option value="usd">$ - USD</option>
     <option value="ars">$ - ARS </option>
 </select> -->
-                    <input class="input-calculator" style="background-color: white;" type="number" id="cost-ticket"
+                    <input class="input-calculator"  type="number" id="cost-ticket"
                         pattern="^\d*(\.\d{0,2})?$" placeholder="18" onkeyup="inputs()">
                     <h5 class="font-calculator-end"></h5>
                 </div>
@@ -144,14 +144,14 @@
 
                 <div class="input-div backgroundLightYellow">
                     <h5 class="font-calculator"> Target Deflection Percentage:</h5>
-                    <input type="number" class="input-calculator" style="background-color: white;"
+                    <input type="number" class="input-calculator" 
                         id="target-deflection" placeholder="30" onkeyup="inputs()">
                     <h5 class="font-calculator-end">%</h5>
                 </div>
 
                 <div class="input-div backgroundLightYellow">
                     <h5 class="font-calculator"> Target SE Productivity Increase:</h5>
-                    <input type="number" class="input-calculator" style="background-color: white;" type="number"
+                    <input type="number" class="input-calculator"  type="number"
                         id="target-productivity" placeholder="15" onkeyup="inputs()">
                     <h5 class="font-calculator-end">%</h5>
                 </div>
@@ -163,7 +163,7 @@
 
                 <h6> Results </h6>
                 <div>
-                    <div class="input-div backgroundLightblue" style="margin: 1rem 0 2rem 0;">
+                    <div class="input-div backgroundLightblue" style="    margin: 2.2rem 0 3rem 0;">
                         <h5 class="font-calculator">Tickets Deflected</h5>
                         <h5 class="font-calculator-end"></h5>
                         <p class="input-calculator" id="result1"> </p>
@@ -207,7 +207,7 @@
                 ================================================== -->
 
         <div style="display: flex; justify-content: center; visibility: hidden;">
-            <button id="save-pdf" style="margin: 0rem" onclick="window.print()">Save PDF</button>
+            <button id="save-pdf" style="margin: 1.5rem;" onclick="window.print()">Save PDF</button>
         </div>
         <div style="display: flex;     justify-content: center;display: none;">
 
