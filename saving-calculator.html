@@ -57,48 +57,45 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/logo-quark-white.svg" class="img-size" alt="Homepage">
+                <img src="images/logo-quark-white.svg" class="img-size" alt="Homepage" style="width: 27rem;">
             </a>
         </div> <!-- end header-logo -->
-
-        <!-- <div style=" background-color: black; width: 100%; height: 10rem;"></div> -->
-
-
 
     </header> <!-- end s-header -->
 
 
     <!-- home
     ================================================== -->
-    <section class="banner" data-parallax="scroll" data-image-src="/images/img-investors.jpg" data-position-y=top style="
-    height: 200px;
-">
-      
-        <div class="">
-<img src="/images/img-investors.jpg" alt="" style="width: 100%;">
+    <section class="banner" data-parallax="scroll" data-image-src="/images/img-investors.jpg" data-position-y=top>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
         </div> <!-- end home-content -->
 
-
     </section> <!-- end s-home -->
+
+
+
 
     <section id='introduction' class="s-about" style="padding-top: 5rem; padding-bottom: 5rem;">
         <!-- calculator
     ================================================== -->
 
-        <h3 class="subhead" style="padding: 0 70px">Saving calculator</h3>
+        <h3 class="subhead" style="padding: 0 70px">Savings calculator</h3>
 
         <div class="calculator-container ">
             <div class="border-container">
-                <h6> Insert your data here: </h6>
+                <h6 style="margin: 1.2rem 0 0;"> Insert your data here: </h6>
 
-                <div class="input-div backgroundLightYellow ">
+                <div class="input-div backgroundLightYellow change-margin">
                     <h5 class="font-calculator">Current Tickets Per Year: </h5>
                     <input class="input-calculator" type="number" pattern="[0-9]*" data-delimiter="." step="0.001"
                         min="0" lang="en" type="text" id="current-tickets" placeholder='100000' onkeyup="inputs()">
                     <h5 class="font-calculator-end"> </h5>
                 </div>
 
-                <div class="input-div backgroundLightYellow">
+                <div class="input-div backgroundLightYellow change-margin">
                     <h5 class="font-calculator">Cost Per Ticket:</h5>
 
                     <input class="input-calculator" type="number" id="cost-ticket" pattern="^\d*(\.\d{0,2})?$"
@@ -107,14 +104,14 @@
                 </div>
 
 
-                <div class="input-div backgroundLightYellow">
+                <div class="input-div backgroundLightYellow change-margin">
                     <h5 class="font-calculator"> Target Deflection Percentage:</h5>
                     <input type="number" class="input-calculator" id="target-deflection" placeholder="30"
                         onkeyup="inputs()">
                     <h5 class="font-calculator-end">%</h5>
                 </div>
 
-                <div class="input-div backgroundLightYellow">
+                <div class="input-div backgroundLightYellow change-margin">
                     <h5 class="font-calculator"> Target SE Productivity Increase:</h5>
                     <input type="number" class="input-calculator" type="number" id="target-productivity"
                         placeholder="15" onkeyup="inputs()">
@@ -126,11 +123,10 @@
 
             <div class="border-container">
 
-                <h6> Results </h6>
+                <h6 style="margin: 1.2rem 0 0;" class="change-margin "> Results </h6>
                 <div>
-                    <div class="input-div backgroundLightblue" style="    margin: 2.2rem 0 3rem 0;">
+                    <div class="input-div backgroundLightblue change-margin " style="    margin: 2.2rem 0 3rem 0;">
                         <h5 class="font-calculator">Tickets Deflected</h5>
-                        <h5 class="font-calculator-end"></h5>
                         <p class="input-calculator" id="result1"> </p>
                     </div>
                 </div>
@@ -141,20 +137,17 @@
                     </div> -->
 
                 <div>
-                    <div class="input-div backgroundLightGreen ">
+                    <div class="input-div backgroundLightGreen change-margin ">
                         <h5 class="font-calculator">Savings From Deflection</h5>
-                        <h5 class="font-calculator-end"></h5>
                         <p class="input-calculator" id="result2"> </p>
                     </div>
-                    <div class="input-div backgroundLightGreen ">
+                    <div class="input-div backgroundLightGreen change-margin ">
                         <h5 class="font-calculator">Savings From Productivity Increase</h5>
-                        <h5 class="font-calculator-end"></h5>
                         <p class="input-calculator" id="result3"> </p>
                     </div>
-                    <div class="input-div backgroundGreen">
+                    <div class="input-div backgroundGreen change-margin ">
                         <h5 class="font-calculator font-bolded "> Total
                             Savings </h5>
-                        <h5 class="font-calculator-end font-bolded"></h5>
                         <p class="input-calculator font-bolded" id="result4"> </p>
                     </div>
                 </div>
@@ -171,9 +164,10 @@
         <!--------------- chart  
                 ================================================== -->
 
-                <div style="display: flex; justify-content: center; visibility: hidden;">
-                    <button id="save-pdf" class="no-print" style="margin: 3rem 1.5rem 0rem" onclick="window.print()">Save PDF</button>
-                </div>
+        <div style="display: flex; justify-content: center; visibility: hidden;">
+            <button id="save-pdf" class="no-print" style="margin: 3rem 1.5rem 0rem" onclick="window.print()">Save
+                PDF</button>
+        </div>
         <div style="display: flex;     justify-content: center;display: none;">
             <button id="show_results" style="align-content: center; visibility: hidden;" onclick="seeChart4()">
                 See
@@ -184,7 +178,7 @@
             <div class="" id="chart-04">
             </div>
         </div>
-       
+
     </section>
 
 
@@ -203,7 +197,7 @@
             <div class="row">
                 <div class="col-full contact-main">
                     <p>
-                        <a href="mailto:info@quark.ai" class="contact-email" > info@quark.ai</a>
+                        <a href="mailto:info@quark.ai" class="contact-email"> info@quark.ai</a>
                         <span class="contact-number">(415) 598-7380</span>
                     </p>
                 </div> <!-- end contact-main -->
