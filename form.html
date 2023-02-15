@@ -158,76 +158,9 @@
 
 
 
-
-
         <!-- end form
     ================================================== -->
-
-
-
-        <script>
-
-            //THIS SCRIPT WILL RUN AFTER BODY IS LOADED
-            const news = [
-                {
-                    id: 1,
-                    htmlTitle: `<h2 style="text-align: center;"> Saving calculator </h2> `,
-                    htmlForm:
-                        `  <div id="ff-compose"></div>`,
-
-                },
-           
-            ]
-
-            //RETRIEVING ALL PARAMETERS FROM URL
-            var options = window.location.search.slice(1)
-                .split('&')
-                .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
-                    b = b.split('=');
-                    a[b[0]] = decodeURIComponent(b[1]);
-                    return a;
-                }, {});
-
-
-            //FILTERING THE NEWS ARRAY
-            var selectedNewArray = news.filter(function (el) {
-                return el.id == options.id;
-            });
-
-            //MODIFYING INNER HTML FOR THE DYNAMIC NEWS CONTAINER
-
-            function script() {
-                document.getElementById("dynamicForm").innerHTML = selectedNewArray[0].htmlForm;
-                document.getElementById("dynamicTitle").innerHTML = selectedNewArray[0].htmlTitle;
-
-
-                const script = document.createElement('script');
-                script.src =
-                    'https://formfacade.com/include/111259845980398253610/form/1FAIpQLSd6KRNHzNH0DTmDN62miIpv3BhJO0WWY-El174ZhWYHm8uEKQ/clean.js?div=ff-compose';
-
-                script.async = true;
-
-                script.onload = () => {
-                    console.log('Script loaded successfuly');
-                    const box = document.getElementById('box');
-                    box.textContent = 'The script has loaded.';
-                };
-
-                script.onerror = () => {
-                    console.log('Error occurred while loading script');
-                };
-
-                document.body.appendChild(script);
-
-            }
-
-        </script>
-
-
     </section>
-
-
-
 
 
 
@@ -282,6 +215,11 @@
 
     <!-- Java Script
             ================================================== -->
+
+    <script type="text/javascript">
+        window.addEventListener('keydown', function (e) { if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) { if (e.target.nodeName == 'INPUT' && e.target.type == 'text') { e.preventDefault(); return false; } } }, true);
+    </script>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
