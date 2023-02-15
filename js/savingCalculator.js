@@ -11,18 +11,18 @@ function inputs() {
 
 
     const ticketsDeflected = parseFloat((currentTickets * targetDeflection) / 100);
-    document.getElementById("result1").innerHTML = ticketsDeflected.toLocaleString('de-DE', { minimumFractionDigits: 0 }); "123.456"
+    document.getElementById("result1").innerHTML = ticketsDeflected.toLocaleString(undefined, { minimumFractionDigits: 0 }); "123,456"
 
     const ticketsAfterDeflection = (currentTickets - ticketsDeflected);
 
     const savingsDeflection = (ticketsDeflected * costTickets);
-    document.getElementById("result2").innerHTML = "$ " + (parseInt(savingsDeflection)).toLocaleString('en-IN', { minimumFractionDigits: 2 }); "123,456.00";
+    document.getElementById("result2").innerHTML = "$ " + (parseInt(savingsDeflection)).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}); "123,456,789.00";
 
     const savingsProductivity = (targetProductivity * costTickets) / 100 * ticketsAfterDeflection;
-    document.getElementById("result3").innerHTML = "$ " + (parseInt(savingsProductivity)).toLocaleString('en-IN', { minimumFractionDigits: 2 }); "123,456.00";
+    document.getElementById("result3").innerHTML = "$ " + (parseInt(savingsProductivity)).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}); "123,456,789.00";
 
     const totalSavings = parseFloat(savingsDeflection) + parseFloat(savingsProductivity);
-    document.getElementById("result4").innerHTML = "$ " + (parseInt(totalSavings)).toLocaleString('en-IN', { minimumFractionDigits: 2 }); "123,456.00";
+    document.getElementById("result4").innerHTML = "$ " + (parseInt(totalSavings)).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}); "123,456,789.00";
 
 
     const currentlyTotal = (currentTickets * costTickets);
