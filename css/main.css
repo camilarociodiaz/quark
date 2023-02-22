@@ -4732,3 +4732,18 @@ html.no-csstransitions .home-content__main {
 }
 
 
+.hubs-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.hbspt-form {
+  width: 60rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
