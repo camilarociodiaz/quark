@@ -2843,6 +2843,10 @@ html.no-csstransitions .home-content__main {
   .home-social {
     left: 40px;
   }
+
+  .home-button a {
+    padding: 1rem;
+  }
 }
 
 
