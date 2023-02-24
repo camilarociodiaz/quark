@@ -2,15 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z1SXL5DC3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-5Z1SXL5DC3');
-    </script>
+   
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -31,12 +23,22 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <!-- <script src="js/pace.min.js"></script> -->
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z1SXL5DC3"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+ 
+         gtag('config', 'G-5Z1SXL5DC3');
+     </script>
 
 </head>
 
@@ -54,7 +56,7 @@
 
         <nav class="header-nav">
 
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <a href="" class="header-nav__close" title="close"><span>Close</span></a>
 
             <div class="header-nav__content">
                 <h3>Quark.ai</h3>
@@ -80,7 +82,7 @@
 
         </nav> <!-- end header-nav -->
 
-        <a class="header-menu-toggle" href="#0">
+        <a class="header-menu-toggle" href="">
             <span class="header-menu-icon"></span>
         </a>
 
@@ -91,8 +93,8 @@
     ================================================== -->
 
 
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="/images/option-02.jpg"
-        data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="/images/option-02.jpg" alt="hero image"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=top >
 
 
         <div class="home-content">
@@ -117,11 +119,28 @@
 
             <div class="logos-home">
                 <a href="/siliconIndia.html">
-                    <img class="logo-home-award" src="/images/Award-logo-2.png" alt="Silicon India award"></a>
+
+                    <picture>
+                        <source type="image/webp" srcset="/images/Award-logo-2.webp">
+                        <img class="logo-home-award" src="/images/Award-logo-2.png" alt="Silicon India award"
+                            loading="lazy">
+                    </picture>
+                </a>
                 <a href="/iso-27001.html">
-                    <img class="logo-home" src="/images/drata-logo.png" alt="iso 27001"></a>
+                    <picture>
+                        <source type="image/webp" srcset="/images/drata-logo.webp">
+                        <img class="logo-home" src="/images/drata-logo.png" alt="iso 27001" loading="lazy">
+                    </picture>
+                </a>
+
+
                 <a href="/tie-50.html">
-                    <img class="logo-home" src="/images/Tie-logo.png" alt="tie 50"></a>
+                    <picture>
+                        <source type="image/webp" srcset="/images/Tie-logo.webp">
+                        <img class="logo-home" src="/images/Tie-logo.png" alt="tie 50" loading="lazy">
+                    </picture>
+                </a>
+
             </div>
 
             <div>
@@ -143,7 +162,7 @@
                 <span>
                     <a href="https://www.tsia.com/webinars/bring-automation-to-technical-and-field-support-with-the-latest-ai-advancements?sti=quarkaiwebsite"
                         target="_blank" rel="noopener noreferrer" style="margin-bottom: 1rem;">
-                        <img src="/images/tsia-logo.svg" class="img-upcoming-events"> </a>
+                        <img src="/images/tsia-logo.svg" class="img-upcoming-events" alt="tsia logo"> </a>
 
                     TSIA Webinar <br>
 
@@ -243,8 +262,17 @@
                     </div>
                 </div>
                 <div class="img-container-mockup">
-                    <img class="img-mockup" src="/images/mockups-17.png" alt="traditional support">
-                    <img class="img-mockup" src="/images/mockups-09.png" alt="support with Quark">
+                    <picture>
+                        <source type="image/webp" srcset="/images/mockups-17.webp">
+                        <img class="img-mockup" src="/images/mockups-17.png" alt="traditional support"
+                            loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source type="image/webp" srcset="/images/mockups-09.webp">
+                        <img class="img-mockup" src="/images/mockups-09.png" alt="support with Quark"
+                            loading="lazy">
+                    </picture>
 
                 </div>
             </div> <!-- end process -->
@@ -499,7 +527,14 @@
                 </div>
 
                 <div class="quark_img-mockup">
-                    <img src="/images/answer-engine--02.png" alt="Quark engine" srcset="">
+
+                    <picture>
+                        <source type="image/webp" srcset="/images/answer-engine--02.webp">
+                        <img src="/images/answer-engine--02.png" alt="Quark engine"
+                            loading="lazy">
+                    </picture>
+
+
                 </div>
 
 
