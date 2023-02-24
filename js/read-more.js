@@ -1718,6 +1718,63 @@ Feb 9, 2022 | Customer Service, Customer Support
             `<img decoding="async" width="1470" height="980" src="/images/Support-Tax-Image.jpg" alt="" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1470px, 100vw" class="wp-image-232464">`,
     },
 
+    {
+        id: 18,
+        htmlDate:
+            `<h3 class="subhead">
+            Feb 14, 2023
+            </h3>`,
+        htmlTitle:
+            ` <h1 class="display-1">
+            Quark.ai CEO, in Digital Commerce 360 – Part 4 - Discusses how AI-based language transformers can boost sales
+             </h1>`,
+        htmlContent:
+            `<div class="col-full">
+            <p class="quark_p">
+            In this article, Quark.ai CEO Prosenjit Sen tells you how, as a B2B commerce company, you can use AI-based language transformers to drive sales and provide your customers with a quick and frictionless path to purchase.
+                  </p>
+                  <a href="https://www.digitalcommerce360.com/2023/02/14/become-amazon-in-your-space-with-ai-ml-using-ai-based-language-transformers-to-boost-sales/" target="_blank" rel="noopener noreferrer"> Read more.</a>
+            <br>
+            </div>
+        </div>`,
+        htmlImg: ``,
+    },
+
+    {
+        id: "",
+        htmlDate:
+            `<h3 class="subhead">
+            Feb 14, 2023
+            </h3>`,
+        htmlTitle:
+            ` <h1 class="display-1">
+                Eliminate Productivity Taxes on Customer Support Organizations
+             </h1>`,
+        htmlContent:
+            `<div class="col-full">
+            <p class="quark_p">
+                  </p>
+            <br>
+
+            <p class="quark_p">
+                </p>
+            <br>
+
+            <p class="quark_p">
+                </p>
+            <br>
+
+           
+            <p class="quark_p"> <b>
+                Calculate your savings today on our   <a href="/form.html" target="_blank" rel="noopener noreferrer"> Customer Support Productivity Tax Savings calculator. </a>
+               <b> </p>
+            <br>
+            </div>
+        </div>`,
+        htmlImg: ``,
+    },
+
+
 ]
 
 //RETRIEVING ALL PARAMETERS FROM URL
