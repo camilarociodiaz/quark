@@ -1719,7 +1719,7 @@ Feb 9, 2022 | Customer Service, Customer Support
     },
 
     {
-        id: 18,
+        id: 20,
         htmlDate:
             `<h3 class="subhead">
             Feb 14, 2023
@@ -1741,38 +1741,115 @@ Feb 9, 2022 | Customer Service, Customer Support
     },
 
     {
-        id: "",
+        id: 21,
         htmlDate:
             `<h3 class="subhead">
-            Feb 14, 2023
+            March 7, 2023 | Author:  Sujay Kumar
             </h3>`,
         htmlTitle:
             ` <h1 class="display-1">
-                Eliminate Productivity Taxes on Customer Support Organizations
+            Understanding the AI Adoption Lifecycle for Customer Support Organizations
              </h1>`,
         htmlContent:
             `<div class="col-full">
             <p class="quark_p">
+            Artificial intelligence (AI) is transforming the way customer support organizations operate. Next
+generation AI solutions can automate repetitive tasks, process enormous catalogs of unstructured
+source data, provide personalized experiences, and offer 24/7 support, among many other benefits.
                   </p>
             <br>
 
             <p class="quark_p">
+            In our experience, the adoption of AI in customer support has been broken down into a four-stage
+lifecycle: awareness, exploration, implementation, and optimization.
                 </p>
             <br>
 
-            <p class="quark_p">
-                </p>
+            <li>
+           <b> Awareness:</b> In the awareness stage, organizations start to realize the potential of AI for customer
+support, with a keen focus on collapsing the time-to-resolution for customer issues. Organizations
+learn about the immediate benefits of processing unstructured source documentation and how easy
+access to this information can collapse support cycle-time — which results in reduced response times,
+improved customer satisfaction, and increased efficiency. Organizations start to consider how AI can
+help them meet the growing demands of their customers and provide better support.
+</li>
             <br>
 
-           
-            <p class="quark_p"> <b>
-                Calculate your savings today on our   <a href="/form.html" target="_blank" rel="noopener noreferrer"> Customer Support Productivity Tax Savings calculator. </a>
-               <b> </p>
-            <br>
+            <li>
+            <b> Exploration:</b> In the exploration stage, organizations start to evaluate AI actively, through onsite
+demonstrations, POCs, and pilots of solutions such as Quark.ai. Customers research the technology,
+compare different options, and determine the art-of-the-possible within their specific domains and
+processes. They also begin to understand the costs and benefits of AI technologies, and how it can
+integrate with their existing systems. Customers seek Proof of Value with the providers to seamlessly
+move from Pilot to Production once the evaluation through the POV is completed.
+</li>
+        <br>
+
+        <li>
+        <b> Implementation:</b> In the implementation stage, organizations start to put their AI plans into action. They
+choose a solution such as Quark.ai, set up the necessary infrastructure, and train their teams to use it.
+They also start to see the immediate benefits of AI, such as reduced response times, immediate issue
+resolution, and improved customer satisfaction, within weeks or even days of implementation.
+</li>
+    <br>
+
+   <li>
+   <b> Optimization: </b>In the optimization stage, organizations continue to refine and improve their AI processes
+and can make financial decisions around increased efficiencies. Customers monitor their results, make
+changes as needed, and identify opportunities to optimize their AI systems. They also consider how an
+improved customer support experience can improve their sales and marketing promises and
+commitments. By this stage, organizations have fully adopted solutions like Quark,ai and and are
+realizing significant benefits from its use, including increased efficiency, reduced costs, and improved
+customer satisfaction.
+</li>
+<br>
+
+<p class="quark_p">
+In conclusion, the adoption of AI in customer support organizations is a process that can yield immediate
+benefits. Our customers are typically following this four-stage lifecycle, and are ensuring that they get
+the most out of AI and deliver better customer experiences. With AI, customer support organizations
+can provide fast, personalized support, 24/7, and keep up with the growing demands of their customers.
+</p>
+<br>
             </div>
         </div>`,
-        htmlImg: ``,
+        htmlImg: `<img decoding="async" width="1470" height="980" src="/images/SupportBlog.jpg" alt="" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1470px, 100vw" class="wp-image-232464">`,
+
     },
+
+    // {
+    //     id: ``,
+    //     htmlDate:
+    //         `<h3 class="subhead">
+    //         Feb 14, 2023
+    //         </h3>`,
+    //     htmlTitle:
+    //         ` <h1 class="display-1">
+    //             Eliminate Productivity Taxes on Customer Support Organizations
+    //          </h1>`,
+    //     htmlContent:
+    //         `<div class="col-full">
+    //         <p class="quark_p">
+    //               </p>
+    //         <br>
+
+    //         <p class="quark_p">
+    //             </p>
+    //         <br>
+
+    //         <p class="quark_p">
+    //             </p>
+    //         <br>
+
+    //         <p class="quark_p"> <b>
+    //             Calculate your savings today on our   <a href="/form.html" target="_blank" rel="noopener noreferrer"> Customer Support Productivity Tax Savings calculator. </a>
+    //            <b> </p>
+    //         <br>
+    //         </div>
+    //     </div>`,
+    //     htmlImg: ``,
+    // },
+
 
 
 ]
